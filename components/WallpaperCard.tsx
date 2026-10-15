@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { useFavourites } from './useFavourites';
 import { useModal, Portal } from './ModalContext';
 import CropModal from './CropModal';
@@ -23,26 +24,31 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
   const original = wallpaper.variants.find((v: any) => v.device === 'original');
 
-  if (pool.length === 0) return null;
+  // SSR-safe default — pick the largest variant we know about
+  const [previewVariant, setPreviewVariant] = useState<any>(
+    pool.length ? pool[pool.length - 1] : null
+  );
 
-  // Largest variant for the grid thumbnail — sharper on retina
-  const thumb = pool[pool.length - 1];
-
-  function bestVariant() {
+  // On the client, refine to the best match for the actual screen
+  useEffect(() => {
+    if (pool.length === 0) return;
     const physicalW = window.screen.width * (window.devicePixelRatio || 1);
-    return (
+    const best =
       [...pool].reverse().find((v: any) => v.width <= physicalW * 1.15) ??
-      pool[pool.length - 1]
-    );
-  }
+      pool[pool.length - 1];
+    setPreviewVariant(best);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [device]);
+
+  if (pool.length === 0 || !previewVariant) return null;
+
+  const thumb = pool[pool.length - 1];
 
   const downloadName = (v: any) =>
     `${wallpaper.slug}-${v.width}x${v.height}.webp`;
 
   const originalExt = original?.path.split('.').pop() ?? 'webp';
   const originalName = `${wallpaper.slug}-original.${originalExt}`;
-
-  const previewVariant = bestVariant();
 
   return (
     <>
@@ -137,7 +143,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
               className="bg-ink-900 neon-border rounded-card max-w-sm w-full shadow-card max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* header */}
               <div className="flex items-start justify-between gap-4 p-5 pb-3">
                 <div className="min-w-0">
                   <h3 className="font-semibold text-lg truncate">
@@ -156,7 +161,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </button>
               </div>
 
-              {/* preview image */}
               <div className="px-5">
                 <div className="rounded-card overflow-hidden bg-ink-800 border border-white/5">
                   <img
@@ -169,7 +173,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </div>
               </div>
 
-              {/* action buttons */}
               <div className="p-5 pt-4 space-y-2">
                 <a
                   href={previewVariant.path}
@@ -204,7 +207,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </button>
               </div>
 
-              {/* size list */}
               <div className="px-5 pb-5">
                 <p className="text-neutral-400 text-xs uppercase tracking-wider mb-2">
                   All sizes
@@ -237,7 +239,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
         </Portal>
       )}
 
-      {/* ---------- Crop modal ---------- */}
       {cropOpen && original && (
         <Portal>
           <CropModal
