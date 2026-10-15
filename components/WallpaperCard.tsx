@@ -1,9 +1,19 @@
 'use client';
-import { useState } from 'react';
 import { useFavourites } from './useFavourites';
+import { useModal, Portal } from './ModalContext';
+import CropModal from './CropModal';
 
 export default function WallpaperCard({ wallpaper, device }: any) {
-  const [open, setOpen] = useState(false);
+  const { openId, setOpenId } = useModal();
+  const detailId = `${wallpaper.slug}:detail`;
+  const cropId = `${wallpaper.slug}:crop`;
+
+  const open = openId === detailId;
+  const cropOpen = openId === cropId;
+
+  const setOpen = (v: boolean) => setOpenId(v ? detailId : null);
+  const setCropOpen = (v: boolean) => setOpenId(v ? cropId : null);
+
   const { favourites, toggle } = useFavourites();
   const isFav = favourites.includes(wallpaper.slug);
 
@@ -11,8 +21,12 @@ export default function WallpaperCard({ wallpaper, device }: any) {
     .filter((v: any) => v.device === device)
     .sort((a: any, b: any) => a.width - b.width);
 
+  const original = wallpaper.variants.find((v: any) => v.device === 'original');
+
   if (pool.length === 0) return null;
-  const thumb = pool[0];
+
+  // Largest variant for the grid thumbnail — sharper on retina
+  const thumb = pool[pool.length - 1];
 
   function bestVariant() {
     const physicalW = window.screen.width * (window.devicePixelRatio || 1);
@@ -22,10 +36,17 @@ export default function WallpaperCard({ wallpaper, device }: any) {
     );
   }
 
-  const downloadName = (v: any) => `${wallpaper.slug}-${v.width}x${v.height}.webp`;
+  const downloadName = (v: any) =>
+    `${wallpaper.slug}-${v.width}x${v.height}.webp`;
+
+  const originalExt = original?.path.split('.').pop() ?? 'webp';
+  const originalName = `${wallpaper.slug}-original.${originalExt}`;
+
+  const previewVariant = bestVariant();
 
   return (
     <>
+      {/* ---------- Grid card ---------- */}
       <div
         className={[
           'group relative rounded-card overflow-hidden',
@@ -52,14 +73,17 @@ export default function WallpaperCard({ wallpaper, device }: any) {
           />
         </button>
 
-        {/* Heart button — top-right corner */}
         <button
           type="button"
           onClick={(e) => {
             e.stopPropagation();
             toggle(wallpaper.slug);
           }}
-          aria-label={isFav ? `Remove ${wallpaper.title} from favourites` : `Add ${wallpaper.title} to favourites`}
+          aria-label={
+            isFav
+              ? `Remove ${wallpaper.title} from favourites`
+              : `Add ${wallpaper.title} to favourites`
+          }
           aria-pressed={isFav}
           className={[
             'absolute top-3 right-3 h-9 w-9 rounded-full',
@@ -85,7 +109,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
           </svg>
         </button>
 
-        {/* Hover overlay with title */}
         <div
           className={[
             'pointer-events-none absolute inset-x-0 bottom-0 p-3',
@@ -100,68 +123,129 @@ export default function WallpaperCard({ wallpaper, device }: any) {
         </div>
       </div>
 
+      {/* ---------- Compact dialog with preview ---------- */}
       {open && (
-        <div
-          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-up"
-          role="dialog"
-          aria-modal="true"
-          aria-label={`${wallpaper.title} options`}
-          onClick={() => setOpen(false)}
-        >
+        <Portal>
           <div
-            className="bg-ink-900 neon-border rounded-card p-5 max-w-sm w-full shadow-card"
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-up"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${wallpaper.title} options`}
+            onClick={() => setOpen(false)}
           >
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <h3 className="font-semibold text-lg">{wallpaper.title}</h3>
-              <button
-                onClick={() => setOpen(false)}
-                aria-label="Close"
-                className="text-neutral-400 hover:text-white text-xl leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan rounded transition-colors"
-              >
-                ×
-              </button>
-            </div>
-
-            <a
-              href={bestVariant().path}
-              download={downloadName(bestVariant())}
-              className="block w-full text-center px-4 py-2.5 rounded-pill bg-neon-gradient text-ink-950 font-medium glow-gradient hover:-translate-y-0.5"
+            <div
+              className="bg-ink-900 neon-border rounded-card max-w-sm w-full shadow-card max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
             >
-              Download for my {device}
-            </a>
-
-            <button
-              type="button"
-              onClick={() => toggle(wallpaper.slug)}
-              className={[
-                'mt-3 w-full text-center px-4 py-2 rounded-pill text-sm font-medium',
-                'border transition-colors duration-200',
-                isFav
-                  ? 'border-neon-pink/60 text-neon-pink hover:bg-neon-pink/10'
-                  : 'border-white/15 text-neutral-300 hover:bg-white/5 hover:border-white/25',
-              ].join(' ')}
-            >
-              {isFav ? '♥ In favourites' : '♡ Add to favourites'}
-            </button>
-
-            <div className="mt-4 text-sm space-y-1">
-              <p className="text-neutral-400 text-xs uppercase tracking-wider mb-2">
-                All sizes
-              </p>
-              {pool.map((v: any) => (
-                <a
-                  key={v.path}
-                  href={v.path}
-                  download={downloadName(v)}
-                  className="block text-neutral-300 hover:text-neon-cyan underline decoration-neutral-600 hover:decoration-neon-cyan transition-colors"
+              {/* header */}
+              <div className="flex items-start justify-between gap-4 p-5 pb-3">
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-lg truncate">
+                    {wallpaper.title}
+                  </h3>
+                  <p className="text-xs text-neutral-400 mt-0.5">
+                    {device} · {previewVariant.width} × {previewVariant.height}
+                  </p>
+                </div>
+                <button
+                  onClick={() => setOpen(false)}
+                  aria-label="Close"
+                  className="shrink-0 text-neutral-400 hover:text-white text-xl leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan rounded transition-colors"
                 >
-                  {v.label}
+                  ×
+                </button>
+              </div>
+
+              {/* preview image */}
+              <div className="px-5">
+                <div className="rounded-card overflow-hidden bg-ink-800 border border-white/5">
+                  <img
+                    src={previewVariant.path}
+                    alt={`${wallpaper.title} preview at ${previewVariant.width} × ${previewVariant.height}`}
+                    className="block w-full h-auto max-h-56 object-contain"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+
+              {/* action buttons */}
+              <div className="p-5 pt-4 space-y-2">
+                <a
+                  href={previewVariant.path}
+                  download={downloadName(previewVariant)}
+                  className="block w-full text-center px-4 py-2.5 rounded-pill bg-neon-gradient text-ink-950 font-medium glow-gradient hover:-translate-y-0.5 transition-transform"
+                >
+                  Download for my {device}
                 </a>
-              ))}
+
+                {original && (
+                  <button
+                    type="button"
+                    onClick={() => setCropOpen(true)}
+                    className="w-full text-center px-4 py-2.5 rounded-pill border border-neon-cyan/50 text-neon-cyan text-sm font-medium hover:bg-neon-cyan/10 transition-colors"
+                  >
+                    ✂ Crop it yourself
+                  </button>
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => toggle(wallpaper.slug)}
+                  className={[
+                    'w-full text-center px-4 py-2 rounded-pill text-sm font-medium',
+                    'border transition-colors duration-200',
+                    isFav
+                      ? 'border-neon-pink/60 text-neon-pink hover:bg-neon-pink/10'
+                      : 'border-white/15 text-neutral-300 hover:bg-white/5 hover:border-white/25',
+                  ].join(' ')}
+                >
+                  {isFav ? '♥ In favourites' : '♡ Add to favourites'}
+                </button>
+              </div>
+
+              {/* size list */}
+              <div className="px-5 pb-5">
+                <p className="text-neutral-400 text-xs uppercase tracking-wider mb-2">
+                  All sizes
+                </p>
+                <div className="text-sm space-y-1 max-h-40 overflow-y-auto pr-1">
+                  {original && (
+                    <a
+                      href={original.path}
+                      download={originalName}
+                      className="block text-neon-cyan hover:text-white underline decoration-neon-cyan/50 hover:decoration-neon-cyan transition-colors font-medium"
+                    >
+                      {original.label} — highest quality
+                    </a>
+                  )}
+
+                  {[...pool].reverse().map((v: any) => (
+                    <a
+                      key={v.path}
+                      href={v.path}
+                      download={downloadName(v)}
+                      className="block text-neutral-300 hover:text-neon-cyan underline decoration-neutral-600 hover:decoration-neon-cyan transition-colors"
+                    >
+                      {v.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </Portal>
+      )}
+
+      {/* ---------- Crop modal ---------- */}
+      {cropOpen && original && (
+        <Portal>
+          <CropModal
+            wallpaper={{ slug: wallpaper.slug, title: wallpaper.title }}
+            srcUrl={original.path}
+            onClose={() => setCropOpen(false)}
+          />
+        </Portal>
       )}
     </>
   );

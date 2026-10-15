@@ -14,14 +14,6 @@ const TARGETS = [
   { device: 'laptop', label: '3840 × 2160', width: 3840, height: 2160 },
 ];
 
-/**
- * "anime_kiminonawa-3840x2160-27358.jpg"
- *   → category: "anime"
- *   → base:     "kiminonawa"
- *
- * Uses the FIRST single underscore as the separator.
- * Then strips a trailing "-<w>x<h>-<id>" that download tools add.
- */
 function parseFilename(filename) {
   const stem = filename.replace(/\.[^.]+$/, '');
   const firstUnderscore = stem.indexOf('_');
@@ -69,6 +61,7 @@ async function build() {
     const meta = await sharp(srcPath).metadata();
     const variants = [];
 
+    // ---- Standard sized variants (for the download list) ----
     for (const t of TARGETS) {
       if ((meta.width ?? 0) < t.width && (meta.height ?? 0) < t.height) continue;
 
@@ -80,7 +73,7 @@ async function build() {
           fit: 'cover',
           position: sharp.strategy.attention,
         })
-        .webp({ quality: 85 })
+        .webp({ quality: 95, effort: 6 })  // ← raised from 85
         .toFile(outPath);
 
       variants.push({
@@ -92,6 +85,32 @@ async function build() {
       });
     }
 
+    // ---- Original-quality variant (untouched, no crop, max quality) ----
+    // Preserves the source image at max quality. Only re-encoded if
+    // the source is already WebP. Otherwise stays as JPEG/PNG.
+    const ext = path.extname(file).toLowerCase().slice(1);
+    const originalFilename = `original.${ext}`;
+    const originalOut = path.join(outDir, originalFilename);
+
+    if (ext === 'webp') {
+      // already webp — re-encode at near-lossless
+      await sharp(srcPath)
+        .webp({ quality: 100, effort: 6 })
+        .toFile(originalOut);
+    } else {
+      // jpg/png — keep as-is, just copy the bytes
+      const { copyFile } = await import('fs/promises');
+      await copyFile(srcPath, originalOut);
+    }
+
+    variants.push({
+      device: 'original',
+      label: `Original — ${meta.width} × ${meta.height}`,
+      width: meta.width ?? 0,
+      height: meta.height ?? 0,
+      path: `/wallpapers/${base}/${originalFilename}`,
+    });
+
     index.push({
       slug: base,
       title: titleFromSlug(base),
@@ -99,7 +118,7 @@ async function build() {
       variants,
     });
 
-    console.log(`✓ ${base}  [${category}]  — ${variants.length} variants`);
+    console.log(`✓ ${base}  [${category}]  — ${variants.length} files (incl. original)`);
   }
 
   await writeFile(DATA, JSON.stringify(index, null, 2));

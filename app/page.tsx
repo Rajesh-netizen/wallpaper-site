@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import Gallery from '@/components/Gallery';
 import BottomNav, { type Tab } from '@/components/BottomNav';
 import { useFavourites } from '@/components/useFavourites';
+import { ModalProvider } from '@/components/ModalContext';
 import type { CategorySlug } from '@/components/CategoryMenu';
 import index from '@/data/wallpapers.json';
 
@@ -15,7 +16,7 @@ export default function Home() {
   const { favourites } = useFavourites();
 
   return (
-    <>
+    <ModalProvider>
       <Nav category={category} onCategoryChange={setCategory} />
       <main>
         <Hero />
@@ -42,6 +43,6 @@ export default function Home() {
       </main>
 
       <BottomNav tab={tab} onChange={setTab} favouriteCount={favourites.length} />
-    </>
+    </ModalProvider>
   );
 }

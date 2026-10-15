@@ -14,12 +14,16 @@ export default function Nav({
       <nav className="mx-auto max-w-7xl px-5 h-16 flex items-center gap-3">
         <CategoryMenu active={category} onChange={onCategoryChange} />
 
-        <Link href="/" className="flex items-center gap-2 group" aria-label="Wallvine home">
+        <Link
+          href="/"
+          className="brand-link flex items-center gap-2 group"
+          aria-label="Wallvine home"
+        >
           <span
             aria-hidden
             className="h-6 w-6 rounded-md bg-neon-gradient shadow-glow-pink group-hover:shadow-glow-cyan transition-shadow duration-300"
           />
-          <span className="text-lg font-semibold tracking-tight">
+          <span className="brand-text text-lg font-semibold tracking-tight">
             Wall<span className="text-neon">vine</span>
           </span>
         </Link>
