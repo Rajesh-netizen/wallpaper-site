@@ -18,18 +18,18 @@ export default function WallpaperCard({ wallpaper, device }: any) {
   const { favourites, toggle } = useFavourites();
   const isFav = favourites.includes(wallpaper.slug);
 
+  const [copied, setCopied] = useState(false);
+
   const pool = wallpaper.variants
     .filter((v: any) => v.device === device)
     .sort((a: any, b: any) => a.width - b.width);
 
   const original = wallpaper.variants.find((v: any) => v.device === 'original');
 
-  // SSR-safe default — pick the largest variant we know about
   const [previewVariant, setPreviewVariant] = useState<any>(
     pool.length ? pool[pool.length - 1] : null
   );
 
-  // On the client, refine to the best match for the actual screen
   useEffect(() => {
     if (pool.length === 0) return;
     const physicalW = window.screen.width * (window.devicePixelRatio || 1);
@@ -49,6 +49,37 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
   const originalExt = original?.path.split('.').pop() ?? 'webp';
   const originalName = `${wallpaper.slug}-original.${originalExt}`;
+
+  // ---------- Share: copy the direct image URL ----------
+  async function shareImage() {
+    const url = `${window.location.origin}${previewVariant.path}`;
+    try {
+      if (navigator.share) {
+        // Mobile: native share sheet
+        await navigator.share({
+          title: wallpaper.title,
+          text: `Wallpaper: ${wallpaper.title}`,
+          url,
+        });
+      } else {
+        // Desktop: copy to clipboard
+        await navigator.clipboard.writeText(url);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
+    } catch (err: any) {
+      // User cancelled share — ignore
+      if (err?.name === 'AbortError') return;
+      // Fallback: try clipboard anyway
+      try {
+        await navigator.clipboard.writeText(url);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } catch {
+        alert('Could not copy the link. Copy manually:\n' + url);
+      }
+    }
+  }
 
   return (
     <>
@@ -152,13 +183,60 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                     {device} · {previewVariant.width} × {previewVariant.height}
                   </p>
                 </div>
-                <button
-                  onClick={() => setOpen(false)}
-                  aria-label="Close"
-                  className="shrink-0 text-neutral-400 hover:text-white text-xl leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan rounded transition-colors"
-                >
-                  ×
-                </button>
+                <div className="flex items-center gap-1 shrink-0">
+                  {/* Send / share button */}
+                  <button
+                    type="button"
+                    onClick={shareImage}
+                    aria-label={copied ? 'Link copied' : 'Send wallpaper link'}
+                    title={copied ? 'Link copied!' : 'Send link'}
+                    className={[
+                      'h-9 w-9 rounded-full flex items-center justify-center',
+                      'transition-all duration-200',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
+                      copied
+                        ? 'text-neon-cyan bg-neon-cyan/10 scale-110'
+                        : 'text-neutral-400 hover:text-white hover:bg-white/10',
+                    ].join(' ')}
+                  >
+                    {copied ? (
+                      // check icon after copy
+                      <svg
+                        viewBox="0 0 24 24"
+                        className="h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M20 6 9 17l-5-5" />
+                      </svg>
+                    ) : (
+                      // share / send icon
+                      <svg
+                        viewBox="0 0 24 24"
+                        className="h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M22 2 11 13" />
+                        <path d="M22 2 15 22l-4-9-9-4 20-7z" />
+                      </svg>
+                    )}
+                  </button>
+
+                  <button
+                    onClick={() => setOpen(false)}
+                    aria-label="Close"
+                    className="h-9 w-9 rounded-full flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/10 text-xl leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan transition-colors"
+                  >
+                    ×
+                  </button>
+                </div>
               </div>
 
               <div className="px-5">
@@ -181,6 +259,20 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 >
                   Download for my {device}
                 </a>
+
+                <button
+                  type="button"
+                  onClick={shareImage}
+                  className={[
+                    'w-full text-center px-4 py-2.5 rounded-pill text-sm font-medium',
+                    'border transition-colors duration-200',
+                    copied
+                      ? 'border-neon-cyan/60 text-neon-cyan bg-neon-cyan/10'
+                      : 'border-white/15 text-neutral-300 hover:bg-white/5 hover:border-white/25',
+                  ].join(' ')}
+                >
+                  {copied ? '✓ Link copied' : '🔗 Send this wallpaper'}
+                </button>
 
                 {original && (
                   <button
