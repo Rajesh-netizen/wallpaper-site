@@ -1,31 +1,25 @@
-import index from '@/data/wallpapers.json';
+'use client';
+import { useState } from 'react';
+import Nav from '@/components/Nav';
 import Gallery from '@/components/Gallery';
+import BottomNav, { type Tab } from '@/components/BottomNav';
+import { useFavourites } from '@/components/useFavourites';
+import type { CategorySlug } from '@/components/CategoryMenu';
+import index from '@/data/wallpapers.json';
 
-type Variant = {
-  device: string;
-  label: string;
-  width: number;
-  height: number;
-  path: string;
-};
-type Wallpaper = { slug: string; title: string; variants: Variant[] };
+export default function BrowsePage() {
+  const [tab, setTab] = useState<Tab>('feed');
+  const [query] = useState('');
+  const [category, setCategory] = useState<CategorySlug>('all');
+  const { favourites } = useFavourites();
 
-const wallpapers = index as Wallpaper[];
-
-export default function Browse() {
   return (
-    <main className="p-6 max-w-7xl mx-auto">
-      <div className="mb-8">
-        <h1 className="text-3xl font-semibold tracking-tight mb-2 text-white">
-          Browse wallpapers
-        </h1>
-        <p className="text-white/50 text-sm">
-          Click any wallpaper to download it in the right size for your
-          device.
-        </p>
-      </div>
-
-      <Gallery wallpapers={wallpapers} />
-    </main>
+    <>
+      <Nav category={category} onCategoryChange={setCategory} />
+      <main className="pt-4">
+        <Gallery wallpapers={index} tab={tab} query={query} category={category} />
+      </main>
+      <BottomNav tab={tab} onChange={setTab} favouriteCount={favourites.length} />
+    </>
   );
 }
