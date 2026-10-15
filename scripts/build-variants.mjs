@@ -1,19 +1,32 @@
 import sharp from 'sharp';
-import { readdir, mkdir, writeFile } from 'fs/promises';
+import { readdir, mkdir, writeFile, copyFile } from 'fs/promises';
 import path from 'path';
 
 const SRC = 'sources';
 const OUT = 'public/wallpapers';
 const DATA = 'data/wallpapers.json';
 
+/**
+ * Target variants. The script only generates a variant if the source
+ * is at least as large — no upscaling.
+ *
+ * Order matters: smallest to largest.
+ */
 const TARGETS = [
   { device: 'phone',  label: '1080 × 1920', width: 1080, height: 1920 },
   { device: 'phone',  label: '1440 × 2560', width: 1440, height: 2560 },
   { device: 'laptop', label: '1920 × 1080', width: 1920, height: 1080 },
   { device: 'laptop', label: '2560 × 1440', width: 2560, height: 1440 },
   { device: 'laptop', label: '3840 × 2160', width: 3840, height: 2160 },
+  { device: 'laptop', label: '5120 × 2880', width: 5120, height: 2880 },
+  { device: 'laptop', label: '7680 × 4320', width: 7680, height: 4320 },
 ];
 
+/**
+ * "anime_kiminonawa-3840x2160-27358.jpg"
+ *   → category: "anime"
+ *   → base:     "kiminonawa"
+ */
 function parseFilename(filename) {
   const stem = filename.replace(/\.[^.]+$/, '');
   const firstUnderscore = stem.indexOf('_');
@@ -59,11 +72,18 @@ async function build() {
     await mkdir(outDir, { recursive: true });
 
     const meta = await sharp(srcPath).metadata();
+    const srcW = meta.width ?? 0;
+    const srcH = meta.height ?? 0;
+
+    console.log(`\n▸ ${file}`);
+    console.log(`  Source: ${srcW} × ${srcH}  [${category}]`);
+
     const variants = [];
 
-    // ---- Standard sized variants (for the download list) ----
+    // ---- Sized variants ----
     for (const t of TARGETS) {
-      if ((meta.width ?? 0) < t.width && (meta.height ?? 0) < t.height) continue;
+      // skip if the source is smaller than the target in BOTH dimensions
+      if (srcW < t.width && srcH < t.height) continue;
 
       const filename = `${t.device}-${t.width}x${t.height}.webp`;
       const outPath = path.join(outDir, filename);
@@ -73,8 +93,12 @@ async function build() {
           fit: 'cover',
           position: sharp.strategy.attention,
         })
-        .webp({ quality: 95, effort: 6 })  // ← raised from 85
+        .webp({ quality: 100, effort: 6 })
         .toFile(outPath);
+
+      const { size } = await import('fs').then((fs) =>
+        fs.promises.stat(outPath)
+      );
 
       variants.push({
         device: t.device,
@@ -83,33 +107,43 @@ async function build() {
         height: t.height,
         path: `/wallpapers/${base}/${filename}`,
       });
+
+      console.log(
+        `  ✓ ${t.label.padEnd(12)} → ${(size / 1024 / 1024).toFixed(2)} MB`
+      );
     }
 
-    // ---- Original-quality variant (untouched, no crop, max quality) ----
-    // Preserves the source image at max quality. Only re-encoded if
-    // the source is already WebP. Otherwise stays as JPEG/PNG.
+    // ---- Original — untouched ----
+    // If the source is JPEG or PNG, copy it byte-for-byte so the user
+    // can download the exact file you uploaded.
+    // If it's WebP, we re-encode at quality 100 (near-lossless).
     const ext = path.extname(file).toLowerCase().slice(1);
     const originalFilename = `original.${ext}`;
     const originalOut = path.join(outDir, originalFilename);
 
     if (ext === 'webp') {
-      // already webp — re-encode at near-lossless
       await sharp(srcPath)
         .webp({ quality: 100, effort: 6 })
         .toFile(originalOut);
     } else {
-      // jpg/png — keep as-is, just copy the bytes
-      const { copyFile } = await import('fs/promises');
       await copyFile(srcPath, originalOut);
     }
 
+    const { size: origSize } = await import('fs').then((fs) =>
+      fs.promises.stat(originalOut)
+    );
+
     variants.push({
       device: 'original',
-      label: `Original — ${meta.width} × ${meta.height}`,
-      width: meta.width ?? 0,
-      height: meta.height ?? 0,
+      label: `Original — ${srcW} × ${srcH}`,
+      width: srcW,
+      height: srcH,
       path: `/wallpapers/${base}/${originalFilename}`,
     });
+
+    console.log(
+      `  ✓ Original      → ${(origSize / 1024 / 1024).toFixed(2)} MB`
+    );
 
     index.push({
       slug: base,
@@ -117,12 +151,10 @@ async function build() {
       category,
       variants,
     });
-
-    console.log(`✓ ${base}  [${category}]  — ${variants.length} files (incl. original)`);
   }
 
   await writeFile(DATA, JSON.stringify(index, null, 2));
-  console.log(`\nDone. ${index.length} wallpapers indexed.`);
+  console.log(`\n${index.length} wallpapers indexed.\n`);
 }
 
 build().catch((e) => {

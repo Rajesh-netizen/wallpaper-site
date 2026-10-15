@@ -5,17 +5,17 @@
     "category": "anime",
     "variants": [
       {
-        "device": "laptop",
-        "label": "1920 × 1080",
-        "width": 1920,
-        "height": 1080,
-        "path": "/wallpapers/arise-solo-levelling/laptop-1920x1080.webp"
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/arise-solo-levelling/phone-1080x1920.webp"
       },
       {
         "device": "original",
-        "label": "Original — 736 × 1308",
-        "width": 736,
-        "height": 1308,
+        "label": "Original — 1308 × 736",
+        "width": 1308,
+        "height": 736,
         "path": "/wallpapers/arise-solo-levelling/original.jpg"
       }
     ]
@@ -336,6 +336,216 @@
     ]
   },
   {
+    "slug": "hanuman-1",
+    "title": "Hanuman 1",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hanuman-1/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hanuman-1/phone-1440x2560.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/hanuman-1/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/hanuman-1/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/hanuman-1/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/hanuman-1/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/hanuman-1/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "hanuman-2",
+    "title": "Hanuman 2",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hanuman-2/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hanuman-2/phone-1440x2560.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/hanuman-2/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/hanuman-2/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/hanuman-2/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/hanuman-2/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5272 × 2944",
+        "width": 5272,
+        "height": 2944,
+        "path": "/wallpapers/hanuman-2/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "hanuman",
+    "title": "Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hanuman/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hanuman/phone-1440x2560.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/hanuman/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/hanuman/laptop-2560x1440.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2688 × 1536",
+        "width": 2688,
+        "height": 1536,
+        "path": "/wallpapers/hanuman/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "krishna-2",
+    "title": "Krishna 2",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/krishna-2/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/krishna-2/phone-1440x2560.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/krishna-2/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/krishna-2/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/krishna-2/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/krishna-2/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/krishna-2/original.png"
+      }
+    ]
+  },
+  {
     "slug": "krishna-ph",
     "title": "Krishna Ph",
     "category": "lord",
@@ -362,17 +572,17 @@
     "category": "lord",
     "variants": [
       {
-        "device": "laptop",
-        "label": "1920 × 1080",
-        "width": 1920,
-        "height": 1080,
-        "path": "/wallpapers/krishna/laptop-1920x1080.webp"
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/krishna/phone-1080x1920.webp"
       },
       {
         "device": "original",
-        "label": "Original — 736 × 1308",
-        "width": 736,
-        "height": 1308,
+        "label": "Original — 1308 × 736",
+        "width": 1308,
+        "height": 736,
         "path": "/wallpapers/krishna/original.jpg"
       }
     ]
@@ -444,6 +654,62 @@
         "width": 3840,
         "height": 2160,
         "path": "/wallpapers/shiva-white/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "shiva",
+    "title": "Shiva",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/shiva/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/shiva/phone-1440x2560.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/shiva/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/shiva/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/shiva/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/shiva/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/shiva/original.png"
       }
     ]
   },
