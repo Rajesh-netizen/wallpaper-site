@@ -86,7 +86,7 @@
   {
     "slug": "ironman-3",
     "title": "Ironman 3",
-    "category": "marve",
+    "category": "marvel",
     "variants": [
       {
         "device": "phone",
@@ -114,7 +114,7 @@
   {
     "slug": "ironman-6",
     "title": "Ironman 6",
-    "category": "marve",
+    "category": "marvel",
     "variants": [
       {
         "device": "phone",
@@ -142,7 +142,7 @@
   {
     "slug": "ironman-7",
     "title": "Ironman 7",
-    "category": "marve",
+    "category": "marvel",
     "variants": [
       {
         "device": "phone",
@@ -170,7 +170,7 @@
   {
     "slug": "ironman-8",
     "title": "Ironman 8",
-    "category": "marve",
+    "category": "marvel",
     "variants": [
       {
         "device": "phone",

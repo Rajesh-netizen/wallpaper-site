@@ -19,46 +19,6 @@
       "original:736x1104"
     ]
   },
-  "ironman-9": {
-    "builtAt": "2026-10-16T05:12:36.785Z",
-    "variants": [
-      "phone:1080x1920",
-      "phone:1440x2560",
-      "original:2700x4800"
-    ]
-  },
-  "ironman-3": {
-    "builtAt": "2026-10-16T05:12:36.785Z",
-    "variants": [
-      "phone:1080x1920",
-      "phone:1440x2560",
-      "original:2944x5252"
-    ]
-  },
-  "ironman-6": {
-    "builtAt": "2026-10-16T05:12:36.785Z",
-    "variants": [
-      "phone:1080x1920",
-      "phone:1440x2560",
-      "original:2944x5656"
-    ]
-  },
-  "ironman-7": {
-    "builtAt": "2026-10-16T05:12:36.785Z",
-    "variants": [
-      "phone:1080x1920",
-      "phone:1440x2560",
-      "original:1920x3428"
-    ]
-  },
-  "ironman-8": {
-    "builtAt": "2026-10-16T05:12:36.785Z",
-    "variants": [
-      "phone:1080x1920",
-      "phone:1440x2560",
-      "original:2944x5476"
-    ]
-  },
   "arise-solo-levelling": {
     "builtAt": "2026-10-16T05:12:36.785Z",
     "variants": [
@@ -330,6 +290,46 @@
       "laptop:3840x2160",
       "laptop:5120x2880",
       "original:2944x5256"
+    ]
+  },
+  "ironman-3": {
+    "builtAt": "2026-10-16T05:56:06.242Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5252"
+    ]
+  },
+  "ironman-6": {
+    "builtAt": "2026-10-16T05:56:11.248Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5656"
+    ]
+  },
+  "ironman-7": {
+    "builtAt": "2026-10-16T05:56:14.779Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:1920x3428"
+    ]
+  },
+  "ironman-8": {
+    "builtAt": "2026-10-16T05:56:19.491Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5476"
+    ]
+  },
+  "ironman-9": {
+    "builtAt": "2026-10-16T05:56:23.698Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2700x4800"
     ]
   }
 }
