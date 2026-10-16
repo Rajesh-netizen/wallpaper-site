@@ -50,8 +50,14 @@ body {
 }
 
 body {
-  /* Reserve space for the fixed bottom nav + iOS safe area */
-  padding-bottom: calc(var(--bottom-nav-h) + max(env(safe-area-inset-bottom, 0px), 8px) + 12px);
+  padding-bottom: calc(var(--bottom-nav-h) + max(env(safe-area-inset-bottom, 0px), 8px) + 16px);
+  overscroll-behavior-y: none;
+}
+
+@supports (height: 100dvh) {
+  body {
+    min-height: 100dvh;
+  }
 }
 
 /* =========================================================
@@ -173,7 +179,7 @@ body {
 }
 
 /* =========================================================
-   BRAND LOGO — always-visible underline shimmer
+   BRAND LOGO — underline shimmer
    ========================================================= */
 .brand-link {
   position: relative;
@@ -391,7 +397,7 @@ body {
 }
 
 /* =========================================================
-   BLUR FADE IN — text entrance animation
+   BLUR FADE IN
    ========================================================= */
 .blur-fade-in {
   opacity: 0;
@@ -422,51 +428,77 @@ body {
   }
 }
 
-.blur-fade-in-words > span {
-  display: inline-block;
-  opacity: 0;
-  filter: blur(12px);
-  transform: translateY(12px);
-  animation: blur-fade-in 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-
 /* =========================================================
-   MOBILE PERFORMANCE — disable heavy effects on phones
+   MOBILE PERFORMANCE
    ========================================================= */
 @media (max-width: 767px) {
-  /* Aurora becomes a static gradient — no animation cost */
-  .aurora-layer::after {
-    animation: none !important;
+  /* No backdrop blur — biggest single win */
+  .backdrop-blur,
+  .backdrop-blur-sm,
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
   }
 
-  /* Card glow pauses on mobile */
+  /* Aurora becomes a static tint — no full-screen compositing */
+  .aurora-layer {
+    filter: none !important;
+    opacity: 0.18 !important;
+    background-image: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(168, 85, 247, 0.35) 0%,
+      rgba(5, 5, 10, 0) 70%
+    ) !important;
+  }
+  .aurora-layer::after {
+    display: none !important;
+  }
+
+  /* No animated card glow */
   .grid-card-wrapper {
     animation: none !important;
     background: linear-gradient(
       135deg,
-      rgba(255, 62, 165, 0.25) 0%,
-      rgba(168, 85, 247, 0.2) 50%,
-      rgba(34, 211, 238, 0.25) 100%
+      rgba(255, 62, 165, 0.3) 0%,
+      rgba(168, 85, 247, 0.25) 50%,
+      rgba(34, 211, 238, 0.3) 100%
     );
     background-size: 100% 100%;
   }
 
-  /* Lighter card shadows on mobile — cheaper to render */
+  /* No drop shadows — reduces rasterization cost */
   .shadow-card {
-    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.7);
+    box-shadow: none !important;
   }
 
-  /* Reduce blur radius on backdrop filters (expensive on mobile GPUs) */
-  .backdrop-blur,
-  .backdrop-blur-sm,
-  .backdrop-blur-md {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+  .glow-gradient {
+    transition: none !important;
+  }
+
+  /* Freeze brand underline shimmer */
+  .brand-text::after {
+    animation: none !important;
+    background-position: 0% 50% !important;
+  }
+
+  /* Freeze hero word/eyebrow animations after they finish */
+  .hero-headline,
+  .hero-headline::before {
+    animation: none !important;
+  }
+
+  /* Lighter text shadow on hero neon words */
+  .hero-word-neon {
+    text-shadow:
+      0 0 10px rgba(255, 62, 165, 0.3),
+      0 0 20px rgba(34, 211, 238, 0.15);
   }
 }
 
 /* =========================================================
-   REDUCED MOTION — override everything above
+   REDUCED MOTION
    ========================================================= */
 @media (prefers-reduced-motion: reduce) {
   *,
