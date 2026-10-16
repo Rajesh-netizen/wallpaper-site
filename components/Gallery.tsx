@@ -2,6 +2,7 @@
 import { useMemo, useState, useEffect } from 'react';
 import WallpaperCard from './WallpaperCard';
 import { useFavourites } from './useFavourites';
+import CubeBackground from './CubeBackground';
 import type { Tab } from './BottomNav';
 import { CATEGORIES, type CategorySlug } from './CategoryMenu';
 
@@ -92,91 +93,118 @@ export default function Gallery({
   return (
     <section
       id="latest"
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 scroll-mt-16"
+      className="relative w-full pb-20 scroll-mt-16 overflow-hidden"
     >
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
-        <div>
-          <h2 className="text-2xl font-semibold tracking-tight">
-            {tab === 'feed' && (category === 'all' ? 'Feed' : labelFor(category))}
-            {tab === 'search' && 'Search'}
-            {tab === 'favourites' && 'Favourites'}
-          </h2>
-          <p className="text-sm text-neutral-300 mt-1">
-            {tab === 'feed' && category === 'all' && 'Random picks, reshuffled every visit.'}
-            {tab === 'feed' && category !== 'all' && `Showing ${labelFor(category)} wallpapers.`}
-            {tab === 'search' && 'Find a wallpaper by name.'}
-            {tab === 'favourites' &&
-              (favourites.length === 0
-                ? 'Tap the heart on any wallpaper to save it here.'
-                : `${favourites.length} saved.`)}
-          </p>
-        </div>
-
-        <div className="flex items-center gap-3 self-start">
-          {tab === 'feed' && (
-            <button
-              type="button"
-              onClick={() => setSeed((s) => s + 1)}
-              className="px-4 py-2 rounded-pill text-sm font-medium border border-white/10 text-neutral-200
-                         hover:bg-white/5 hover:border-white/25 hover:text-white
-                         active:translate-y-[1px]
-                         transition-all duration-200
-                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan"
-            >
-              ↻ Reshuffle
-            </button>
-          )}
-
-          <div
-            role="tablist"
-            aria-label="Device"
-            className="inline-flex p-1 rounded-pill bg-ink-800 border border-white/10"
-          >
-            {(['phone', 'laptop'] as Device[]).map((d) => {
-              const active = device === d;
-              return (
-                <button
-                  key={d}
-                  role="tab"
-                  aria-selected={active}
-                  onClick={() => pickDevice(d)}
-                  className={[
-                    'px-4 py-1.5 text-sm rounded-pill capitalize transition-all duration-200',
-                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
-                    active
-                      ? 'bg-white/15 text-white shadow-glow-cyan'
-                      : 'text-neutral-300 hover:text-white hover:bg-white/5',
-                  ].join(' ')}
-                >
-                  {d}
-                </button>
-              );
-            })}
-          </div>
-        </div>
+      {/* ---------- Cube lattice background ---------- */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <CubeBackground />
       </div>
 
-      {list.length === 0 ? (
-        <p className="text-neutral-400 py-16 text-center">
-          {tab === 'feed' && category !== 'all' &&
-            `No ${device} wallpapers in “${labelFor(category)}” yet.`}
-          {tab === 'feed' && category === 'all' && `No ${device} wallpapers yet.`}
-          {tab === 'search' &&
-            (query ? `No results for “${query}”.` : `No ${device} wallpapers to search.`)}
-          {tab === 'favourites' &&
-            (favourites.length === 0
-              ? 'No favourites yet — tap a heart to save one.'
-              : `None of your favourites have a ${device} version.`)}
-        </p>
-      ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
-          {list.map((w) => (
-            <div key={w.slug} className="animate-fade-up">
-              <WallpaperCard wallpaper={w} device={device} />
+      {/* ---------- Fade edges to black so it doesn't look boxy ---------- */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse at center, transparent 45%, rgba(5,5,10,0.85) 100%)',
+        }}
+      />
+
+      {/* ---------- Content wrapper ---------- */}
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header row — blur-fade on every tab/category change */}
+        <div
+          key={`${tab}-${category}`}
+          className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6"
+        >
+          <div>
+            <h2 className="blur-fade-in blur-fade-in-1 text-2xl font-semibold tracking-tight">
+              {tab === 'feed' && (category === 'all' ? 'Feed' : labelFor(category))}
+              {tab === 'search' && 'Search'}
+              {tab === 'favourites' && 'Favourites'}
+            </h2>
+            <p className="blur-fade-in blur-fade-in-2 text-sm text-neutral-300 mt-1">
+              {tab === 'feed' && category === 'all' && 'Random picks, reshuffled every visit.'}
+              {tab === 'feed' && category !== 'all' && `Showing ${labelFor(category)} wallpapers.`}
+              {tab === 'search' && 'Find a wallpaper by name.'}
+              {tab === 'favourites' &&
+                (favourites.length === 0
+                  ? 'Tap the heart on any wallpaper to save it here.'
+                  : `${favourites.length} saved.`)}
+            </p>
+          </div>
+
+          <div className="blur-fade-in blur-fade-in-3 flex items-center gap-3 self-start">
+            {tab === 'feed' && (
+              <button
+                type="button"
+                onClick={() => setSeed((s) => s + 1)}
+                className="px-4 py-2 rounded-pill text-sm font-medium border border-white/10 text-neutral-200
+                           hover:bg-white/5 hover:border-white/25 hover:text-white
+                           active:translate-y-[1px]
+                           transition-all duration-200
+                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan"
+              >
+                ↻ Reshuffle
+              </button>
+            )}
+
+            <div
+              role="tablist"
+              aria-label="Device"
+              className="inline-flex p-1 rounded-pill bg-ink-800 border border-white/10"
+            >
+              {(['phone', 'laptop'] as Device[]).map((d) => {
+                const active = device === d;
+                return (
+                  <button
+                    key={d}
+                    role="tab"
+                    aria-selected={active}
+                    onClick={() => pickDevice(d)}
+                    className={[
+                      'px-4 py-1.5 text-sm rounded-pill capitalize transition-all duration-200',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
+                      active
+                        ? 'bg-white/15 text-white shadow-glow-cyan'
+                        : 'text-neutral-300 hover:text-white hover:bg-white/5',
+                    ].join(' ')}
+                  >
+                    {d}
+                  </button>
+                );
+              })}
             </div>
-          ))}
+          </div>
         </div>
-      )}
+
+        {/* Grid */}
+        {list.length === 0 ? (
+          <p className="text-neutral-400 py-16 text-center">
+            {tab === 'feed' && category !== 'all' &&
+              `No ${device} wallpapers in “${labelFor(category)}” yet.`}
+            {tab === 'feed' && category === 'all' && `No ${device} wallpapers yet.`}
+            {tab === 'search' &&
+              (query ? `No results for “${query}”.` : `No ${device} wallpapers to search.`)}
+            {tab === 'favourites' &&
+              (favourites.length === 0
+                ? 'No favourites yet — tap a heart to save one.'
+                : `None of your favourites have a ${device} version.`)}
+          </p>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
+            {list.map((w, i) => (
+              <div
+                key={w.slug}
+                className="blur-fade-in"
+                style={{ animationDelay: `${Math.min(i * 40, 600)}ms` }}
+              >
+                <WallpaperCard wallpaper={w} device={device} />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </section>
   );
 }

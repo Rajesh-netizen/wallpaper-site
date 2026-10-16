@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import CategoryMenu, { type CategorySlug } from './CategoryMenu';
+import LogoSparkles from './LogoSparkles';
 
 export default function Nav({
   category,
@@ -16,15 +17,18 @@ export default function Nav({
 
         <Link
           href="/"
-          className="brand-link flex items-center gap-2 group"
+          className="brand-link relative flex items-center gap-2 group"
           aria-label="Wallvine home"
         >
           <span
             aria-hidden
             className="h-6 w-6 rounded-md bg-neon-gradient shadow-glow-pink group-hover:shadow-glow-cyan transition-shadow duration-300"
           />
-          <span className="brand-text text-lg font-semibold tracking-tight">
+          <span className="brand-text relative text-lg font-semibold tracking-tight">
             Wall<span className="text-neon">vine</span>
+
+            {/* Sparkles fall from behind the underline */}
+            <LogoSparkles />
           </span>
         </Link>
       </nav>

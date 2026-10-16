@@ -1,8 +1,55 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useFavourites } from './useFavourites';
 import { useModal, Portal } from './ModalContext';
 import CropModal from './CropModal';
+import { BackgroundGradient } from './ui/background-gradient';
+
+/** 3D tilt on hover — instant tracking, smooth reset.
+ *  `divisor` controls intensity: lower = stronger. */
+function useTilt(
+  ref: React.RefObject<HTMLDivElement | null>,
+  divisor: number = 12
+) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (matchMedia('(pointer: coarse)').matches) return;
+
+    let raf = 0;
+
+    const move = (e: MouseEvent) => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const { left, top, width, height } = el.getBoundingClientRect();
+        const x = (e.clientX - left - width / 2) / divisor;
+        const y = (e.clientY - top - height / 2) / divisor;
+        el.style.transition = 'none';
+        el.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${y}deg)`;
+      });
+    };
+
+    const leave = () => {
+      cancelAnimationFrame(raf);
+      el.style.transition = 'transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1)';
+      el.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
+      window.setTimeout(() => {
+        if (el) el.style.transition = '';
+      }, 340);
+    };
+
+    el.addEventListener('mousemove', move);
+    el.addEventListener('mouseleave', leave);
+
+    return () => {
+      el.removeEventListener('mousemove', move);
+      el.removeEventListener('mouseleave', leave);
+      cancelAnimationFrame(raf);
+    };
+  }, [ref, divisor]);
+}
 
 export default function WallpaperCard({ wallpaper, device }: any) {
   const { openId, setOpenId } = useModal();
@@ -40,6 +87,14 @@ export default function WallpaperCard({ wallpaper, device }: any) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [device]);
 
+  // Grid card tilt — strong
+  const cardRef = useRef<HTMLDivElement>(null);
+  useTilt(cardRef, 12);
+
+  // Modal tilt — attached to the whole dialog
+  const previewRef = useRef<HTMLDivElement>(null);
+  useTilt(previewRef, 20);
+
   if (pool.length === 0 || !previewVariant) return null;
 
   const thumb = pool[pool.length - 1];
@@ -50,27 +105,22 @@ export default function WallpaperCard({ wallpaper, device }: any) {
   const originalExt = original?.path.split('.').pop() ?? 'webp';
   const originalName = `${wallpaper.slug}-original.${originalExt}`;
 
-  // ---------- Share: copy the direct image URL ----------
   async function shareImage() {
     const url = `${window.location.origin}${previewVariant.path}`;
     try {
       if (navigator.share) {
-        // Mobile: native share sheet
         await navigator.share({
           title: wallpaper.title,
           text: `Wallpaper: ${wallpaper.title}`,
           url,
         });
       } else {
-        // Desktop: copy to clipboard
         await navigator.clipboard.writeText(url);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       }
     } catch (err: any) {
-      // User cancelled share — ignore
       if (err?.name === 'AbortError') return;
-      // Fallback: try clipboard anyway
       try {
         await navigator.clipboard.writeText(url);
         setCopied(true);
@@ -83,84 +133,93 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
   return (
     <>
-      {/* ---------- Grid card ---------- */}
-      <div
-        className={[
-          'group relative rounded-card overflow-hidden',
-          'bg-ink-800 shadow-card',
-          'ring-1 ring-white/5 hover:ring-white/10',
-          'transition-all duration-300 ease-out',
-          'hover:-translate-y-1',
-        ].join(' ')}
+      {/* ---------- Grid card with glow + strong tilt ---------- */}
+      <BackgroundGradient
+        containerClassName="rounded-card"
+        className="rounded-card bg-ink-900"
       >
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          aria-label={`View ${wallpaper.title}`}
-          className="block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 rounded-card"
-        >
-          <img
-            src={thumb.path}
-            alt={`${wallpaper.title} wallpaper preview`}
-            loading="lazy"
-            decoding="async"
-            width={thumb.width}
-            height={thumb.height}
-            className="w-full h-auto"
-          />
-        </button>
-
-        <button
-          type="button"
-          onClick={(e) => {
-            e.stopPropagation();
-            toggle(wallpaper.slug);
-          }}
-          aria-label={
-            isFav
-              ? `Remove ${wallpaper.title} from favourites`
-              : `Add ${wallpaper.title} to favourites`
-          }
-          aria-pressed={isFav}
-          className={[
-            'absolute top-3 right-3 h-9 w-9 rounded-full',
-            'flex items-center justify-center',
-            'bg-black/50 backdrop-blur-sm',
-            'opacity-0 group-hover:opacity-100 focus-visible:opacity-100',
-            'transition-all duration-200',
-            'hover:scale-110 hover:bg-black/70',
-            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
-            isFav ? 'opacity-100' : '',
-          ].join(' ')}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            className={`h-4 w-4 transition-colors ${
-              isFav ? 'fill-neon-pink stroke-neon-pink' : 'fill-none stroke-white'
-            }`}
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
-        </button>
-
         <div
+          ref={cardRef}
           className={[
-            'pointer-events-none absolute inset-x-0 bottom-0 p-3',
-            'bg-gradient-to-t from-black/80 to-transparent',
-            'opacity-0 group-hover:opacity-100 group-focus-within:opacity-100',
-            'transition-opacity duration-200',
+            'group relative rounded-card overflow-hidden',
+            'shadow-card',
+            'transition-shadow duration-200 ease-out',
+            'will-change-transform',
           ].join(' ')}
+          style={{ transformStyle: 'preserve-3d' }}
         >
-          <p className="text-sm font-medium text-white truncate">
-            {wallpaper.title}
-          </p>
-        </div>
-      </div>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            aria-label={`View ${wallpaper.title}`}
+            className="block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 rounded-card"
+          >
+            <img
+              src={thumb.path}
+              alt={`${wallpaper.title} wallpaper preview`}
+              loading="lazy"
+              decoding="async"
+              width={thumb.width}
+              height={thumb.height}
+              className="w-full h-auto"
+              draggable={false}
+            />
+          </button>
 
-      {/* ---------- Compact dialog with preview ---------- */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              toggle(wallpaper.slug);
+            }}
+            aria-label={
+              isFav
+                ? `Remove ${wallpaper.title} from favourites`
+                : `Add ${wallpaper.title} to favourites`
+            }
+            aria-pressed={isFav}
+            className={[
+              'absolute top-3 right-3 h-9 w-9 rounded-full',
+              'flex items-center justify-center',
+              'bg-black/50 backdrop-blur-sm',
+              'opacity-0 group-hover:opacity-100 focus-visible:opacity-100',
+              'transition-all duration-200',
+              'hover:scale-110 hover:bg-black/70',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
+              isFav ? 'opacity-100' : '',
+            ].join(' ')}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              className={`h-4 w-4 transition-colors ${
+                isFav
+                  ? 'fill-neon-pink stroke-neon-pink'
+                  : 'fill-none stroke-white'
+              }`}
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </button>
+
+          <div
+            className={[
+              'pointer-events-none absolute inset-x-0 bottom-0 p-3',
+              'bg-gradient-to-t from-black/80 to-transparent',
+              'opacity-0 group-hover:opacity-100 group-focus-within:opacity-100',
+              'transition-opacity duration-200',
+            ].join(' ')}
+          >
+            <p className="text-sm font-medium text-white truncate">
+              {wallpaper.title}
+            </p>
+          </div>
+        </div>
+      </BackgroundGradient>
+
+      {/* ---------- Modal with 3D tilt on the whole dialog ---------- */}
       {open && (
         <Portal>
           <div
@@ -171,9 +230,12 @@ export default function WallpaperCard({ wallpaper, device }: any) {
             onClick={() => setOpen(false)}
           >
             <div
-              className="bg-ink-900 neon-border rounded-card max-w-sm w-full shadow-card max-h-[90vh] overflow-y-auto"
+              ref={previewRef}
+              className="bg-ink-900 neon-border rounded-card max-w-sm w-full shadow-card max-h-[90vh] overflow-y-auto will-change-transform"
+              style={{ transformStyle: 'preserve-3d' }}
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Header */}
               <div className="flex items-start justify-between gap-4 p-5 pb-3">
                 <div className="min-w-0">
                   <h3 className="font-semibold text-lg truncate">
@@ -184,7 +246,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                   </p>
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
-                  {/* Send / share button */}
                   <button
                     type="button"
                     onClick={shareImage}
@@ -200,7 +261,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                     ].join(' ')}
                   >
                     {copied ? (
-                      // check icon after copy
                       <svg
                         viewBox="0 0 24 24"
                         className="h-5 w-5"
@@ -213,7 +273,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     ) : (
-                      // share / send icon
                       <svg
                         viewBox="0 0 24 24"
                         className="h-5 w-5"
@@ -239,6 +298,7 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </div>
               </div>
 
+              {/* Preview image */}
               <div className="px-5">
                 <div className="rounded-card overflow-hidden bg-ink-800 border border-white/5">
                   <img
@@ -247,10 +307,12 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                     className="block w-full h-auto max-h-56 object-contain"
                     loading="eager"
                     decoding="async"
+                    draggable={false}
                   />
                 </div>
               </div>
 
+              {/* Actions */}
               <div className="p-5 pt-4 space-y-2">
                 <a
                   href={previewVariant.path}
@@ -299,6 +361,7 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </button>
               </div>
 
+              {/* All sizes */}
               <div className="px-5 pb-5">
                 <p className="text-neutral-400 text-xs uppercase tracking-wider mb-2">
                   All sizes

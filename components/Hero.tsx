@@ -1,20 +1,14 @@
 import Link from 'next/link';
+import { AuroraBackground } from './ui/aurora-background';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-neon-soft animate-glow-pulse"
-      />
-
+    <AuroraBackground className="min-h-[420px] sm:min-h-[520px] md:min-h-[600px]">
       <div className="relative mx-auto max-w-5xl px-5 pt-14 pb-8 sm:pt-20 sm:pb-10 md:pt-24 md:pb-12 text-center">
-        {/* ---------- eyebrow: animated fade-up with gradient shimmer ---------- */}
         <p className="hero-eyebrow text-xs uppercase tracking-[0.28em] text-neutral-300 mb-4">
           <span className="hero-eyebrow-text">Premium wallpapers</span>
         </p>
 
-        {/* ---------- headline: glow + letter-by-letter entrance ---------- */}
         <h1 className="hero-headline text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.08]">
           <span className="hero-word" style={{ animationDelay: '0.05s' }}>
             Wallpapers
@@ -42,13 +36,11 @@ export default function Hero() {
           </span>
         </h1>
 
-        {/* ---------- description: subtle rise ---------- */}
         <p className="hero-description mt-4 text-base sm:text-lg text-neutral-300 max-w-xl mx-auto leading-relaxed">
           One collection, tuned for every device. Pick phone or laptop, download
           the exact resolution you need.
         </p>
 
-        {/* ---------- CTA ---------- */}
         <div className="hero-cta mt-6 flex items-center justify-center">
           <Link
             href="#latest"
@@ -58,6 +50,6 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-    </section>
+    </AuroraBackground>
   );
 }
