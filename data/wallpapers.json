@@ -1265,5 +1265,75 @@
         "path": "/wallpapers/ironman-5/original.jpeg"
       }
     ]
+  },
+  {
+    "slug": "loki-ph",
+    "title": "Loki Ph",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/loki-ph/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/loki-ph/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5252",
+        "width": 2944,
+        "height": 5252,
+        "path": "/wallpapers/loki-ph/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "loki",
+    "title": "Loki",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/loki/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/loki/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/loki/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/loki/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5256 × 2944",
+        "width": 5256,
+        "height": 2944,
+        "path": "/wallpapers/loki/original.png"
+      }
+    ]
   }
 ]

@@ -331,5 +331,23 @@
       "phone:1440x2560",
       "original:2700x4800"
     ]
+  },
+  "loki-ph": {
+    "builtAt": "2026-10-16T06:26:02.496Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5252"
+    ]
+  },
+  "loki": {
+    "builtAt": "2026-10-16T06:26:19.542Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5256x2944"
+    ]
   }
 }
