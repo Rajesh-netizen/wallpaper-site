@@ -39,7 +39,7 @@
    ========================================================= */
 :root {
   color-scheme: dark;
-  --bottom-nav-h: 64px;
+  --bottom-nav-h: 72px;
 }
 
 html,
@@ -50,7 +50,8 @@ body {
 }
 
 body {
-  padding-bottom: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom, 0px));
+  /* Reserve space for the fixed bottom nav + iOS safe area */
+  padding-bottom: calc(var(--bottom-nav-h) + max(env(safe-area-inset-bottom, 0px), 8px) + 12px);
 }
 
 /* =========================================================
@@ -136,6 +137,39 @@ body {
 
 .glow-gradient:active {
   transform: translateY(1px);
+}
+
+/* =========================================================
+   CARD GLOW — pure CSS, no framer-motion
+   ========================================================= */
+.grid-card-wrapper {
+  position: relative;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 62, 165, 0.45) 0%,
+    rgba(168, 85, 247, 0.4) 50%,
+    rgba(34, 211, 238, 0.45) 100%
+  );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  transition: background-position 500ms ease;
+}
+
+@media (min-width: 768px) {
+  .grid-card-wrapper {
+    animation: card-glow-shift 10s ease infinite alternate;
+  }
+}
+
+.grid-card-wrapper:hover {
+  background-position: 100% 50%;
+}
+
+@keyframes card-glow-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 /* =========================================================
@@ -397,6 +431,41 @@ body {
 }
 
 /* =========================================================
+   MOBILE PERFORMANCE — disable heavy effects on phones
+   ========================================================= */
+@media (max-width: 767px) {
+  /* Aurora becomes a static gradient — no animation cost */
+  .aurora-layer::after {
+    animation: none !important;
+  }
+
+  /* Card glow pauses on mobile */
+  .grid-card-wrapper {
+    animation: none !important;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 62, 165, 0.25) 0%,
+      rgba(168, 85, 247, 0.2) 50%,
+      rgba(34, 211, 238, 0.25) 100%
+    );
+    background-size: 100% 100%;
+  }
+
+  /* Lighter card shadows on mobile — cheaper to render */
+  .shadow-card {
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Reduce blur radius on backdrop filters (expensive on mobile GPUs) */
+  .backdrop-blur,
+  .backdrop-blur-sm,
+  .backdrop-blur-md {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* =========================================================
    REDUCED MOTION — override everything above
    ========================================================= */
 @media (prefers-reduced-motion: reduce) {
@@ -429,7 +498,6 @@ body {
     text-shadow: none !important;
   }
 
-  /* Keep the underline visible when motion is reduced — just freeze it */
   .brand-text::after {
     animation: none !important;
     background-position: 0% 50% !important;

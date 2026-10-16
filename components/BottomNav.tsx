@@ -49,9 +49,10 @@ export default function BottomNav({
   return (
     <nav
       aria-label="Primary"
-      className="fixed bottom-0 inset-x-0 z-50 border-t border-white/10
-                 bg-ink-950/90 backdrop-blur"
-      style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
+      className="fixed bottom-0 inset-x-0 z-50 border-t border-white/10 bg-ink-950/95 backdrop-blur-md"
+      style={{
+        paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 8px)',
+      }}
     >
       <ul className="mx-auto max-w-md grid grid-cols-3">
         {items.map((item) => {

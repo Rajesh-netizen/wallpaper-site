@@ -3,10 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import { useFavourites } from './useFavourites';
 import { useModal, Portal } from './ModalContext';
 import CropModal from './CropModal';
-import { BackgroundGradient } from './ui/background-gradient';
 
-/** 3D tilt on hover — instant tracking, smooth reset.
- *  `divisor` controls intensity: lower = stronger. */
+/** 3D tilt on hover — instant tracking, smooth reset. */
 function useTilt(
   ref: React.RefObject<HTMLDivElement | null>,
   divisor: number = 12
@@ -87,11 +85,9 @@ export default function WallpaperCard({ wallpaper, device }: any) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [device]);
 
-  // Grid card tilt — strong
   const cardRef = useRef<HTMLDivElement>(null);
   useTilt(cardRef, 12);
 
-  // Modal tilt — attached to the whole dialog
   const previewRef = useRef<HTMLDivElement>(null);
   useTilt(previewRef, 20);
 
@@ -133,16 +129,13 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
   return (
     <>
-      {/* ---------- Grid card with glow + strong tilt ---------- */}
-      <BackgroundGradient
-        containerClassName="rounded-card"
-        className="rounded-card bg-ink-900"
-      >
+      {/* ---------- Grid card ---------- */}
+      <div className="grid-card-wrapper rounded-card">
         <div
           ref={cardRef}
           className={[
             'group relative rounded-card overflow-hidden',
-            'shadow-card',
+            'bg-ink-900 shadow-card',
             'transition-shadow duration-200 ease-out',
             'will-change-transform',
           ].join(' ')}
@@ -217,9 +210,9 @@ export default function WallpaperCard({ wallpaper, device }: any) {
             </p>
           </div>
         </div>
-      </BackgroundGradient>
+      </div>
 
-      {/* ---------- Modal with 3D tilt on the whole dialog ---------- */}
+      {/* ---------- Modal ---------- */}
       {open && (
         <Portal>
           <div
@@ -235,7 +228,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
               style={{ transformStyle: 'preserve-3d' }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Header */}
               <div className="flex items-start justify-between gap-4 p-5 pb-3">
                 <div className="min-w-0">
                   <h3 className="font-semibold text-lg truncate">
@@ -298,7 +290,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </div>
               </div>
 
-              {/* Preview image */}
               <div className="px-5">
                 <div className="rounded-card overflow-hidden bg-ink-800 border border-white/5">
                   <img
@@ -312,7 +303,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </div>
               </div>
 
-              {/* Actions */}
               <div className="p-5 pt-4 space-y-2">
                 <a
                   href={previewVariant.path}
@@ -361,7 +351,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 </button>
               </div>
 
-              {/* All sizes */}
               <div className="px-5 pb-5">
                 <p className="text-neutral-400 text-xs uppercase tracking-wider mb-2">
                   All sizes
