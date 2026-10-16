@@ -1,0 +1,335 @@
+{
+  "3-avatar": {
+    "builtAt": "2026-10-16T05:12:36.784Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5300"
+    ]
+  },
+  "krishna-ph": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "original:736x1308"
+    ]
+  },
+  "shiva-cosmic": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "original:736x1104"
+    ]
+  },
+  "ironman-9": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2700x4800"
+    ]
+  },
+  "ironman-3": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5252"
+    ]
+  },
+  "ironman-6": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5656"
+    ]
+  },
+  "ironman-7": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:1920x3428"
+    ]
+  },
+  "ironman-8": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5476"
+    ]
+  },
+  "arise-solo-levelling": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "original:1308x736"
+    ]
+  },
+  "hunter-x-hunter": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "ichigo-kurosaki": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "jujutsu-kaisen": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "kiminonawa": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "luffy": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "original:736x1311"
+    ]
+  },
+  "my-hero-academia": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "nanami-and-gojo": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "hanuman-1": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5120x2880"
+    ]
+  },
+  "hanuman-2": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5272x2944"
+    ]
+  },
+  "hanuman-3": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5228x2940"
+    ]
+  },
+  "hanuman-ram": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "original:2944x1656"
+    ]
+  },
+  "hanuman": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "original:2688x1536"
+    ]
+  },
+  "krishna-2": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5120x2880"
+    ]
+  },
+  "krishna-3-1": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "original:2560x1440"
+    ]
+  },
+  "krishna": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "original:1308x736"
+    ]
+  },
+  "shiva-2": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5228x2944"
+    ]
+  },
+  "shiva-white": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "shiva": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "shivling": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:3840x2160"
+    ]
+  },
+  "spiderman-1": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "spiderman-2": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5228x2944"
+    ]
+  },
+  "spiderman-3": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5180x2944"
+    ]
+  },
+  "spiderman-4": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:4800x2700"
+    ]
+  },
+  "vemon-2": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "vemon": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "original:4736x2664"
+    ]
+  },
+  "ironman-1": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:2944x5232"
+    ]
+  },
+  "ironman-2": {
+    "builtAt": "2026-10-16T05:12:36.785Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:2944x5256"
+    ]
+  },
+  "ironman-4": {
+    "builtAt": "2026-10-16T05:12:36.786Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:2944x5256"
+    ]
+  },
+  "ironman-5": {
+    "builtAt": "2026-10-16T05:12:36.786Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:2944x5256"
+    ]
+  }
+}

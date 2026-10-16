@@ -1,16 +1,22 @@
 import sharp from 'sharp';
-import { readdir, mkdir, writeFile, copyFile, stat, unlink } from 'fs/promises';
+import {
+  readdir,
+  mkdir,
+  writeFile,
+  copyFile,
+  stat,
+  unlink,
+  readFile,
+} from 'fs/promises';
+import { existsSync } from 'fs';
 import path from 'path';
 
 const SRC = 'sources';
 const OUT = 'public/wallpapers';
 const DATA = 'data/wallpapers.json';
+const PROCESSED = 'data/processed.json';
 
-// Cloudflare Pages hard limit is 25 MiB. Use 24 MiB to leave headroom.
 const MAX_FILE_MB = 24;
-
-// If an original is over the limit, try these WebP quality levels in order,
-// stopping at the first that brings the file under MAX_FILE_MB.
 const FALLBACK_QUALITIES = [95, 92, 88, 85, 80, 75];
 
 const FOLDERS = [
@@ -28,6 +34,7 @@ const TARGETS = [
   { device: 'laptop', label: '5120 × 2880', width: 5120, height: 2880 },
 ];
 
+// ---------- helpers ----------
 function parseFilename(filename) {
   const stem = filename.replace(/\.[^.]+$/, '');
   const firstUnderscore = stem.indexOf('_');
@@ -54,6 +61,15 @@ function slug(s) {
 
 function titleFromSlug(s) {
   return s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+async function readJsonSafe(p, fallback) {
+  try {
+    const raw = await readFile(p, 'utf8');
+    return JSON.parse(raw);
+  } catch {
+    return fallback;
+  }
 }
 
 async function collectFiles() {
@@ -92,10 +108,9 @@ async function collectFiles() {
 }
 
 /**
- * Produce an "original" variant under MAX_FILE_MB.
- * If the source is already small enough, copy it byte-for-byte.
- * If it's too large, re-encode as WebP — trying decreasing quality
- * levels until it lands under the limit.
+ * Produce an "original" variant. Copy byte-for-byte if small enough.
+ * If over MAX_FILE_MB, re-encode as WebP at decreasing quality until
+ * it fits. Returns null if it can't fit.
  */
 async function produceOriginal(srcPath, outDir, ext, srcW, srcH) {
   const originalOut = path.join(outDir, `original.${ext}`);
@@ -103,7 +118,6 @@ async function produceOriginal(srcPath, outDir, ext, srcW, srcH) {
   let { size } = await stat(originalOut);
   let mb = size / 1024 / 1024;
 
-  // Fast path — already under the limit, keep the exact source bytes
   if (mb <= MAX_FILE_MB) {
     return {
       filename: `original.${ext}`,
@@ -115,8 +129,6 @@ async function produceOriginal(srcPath, outDir, ext, srcW, srcH) {
     };
   }
 
-  // Too large — re-encode as WebP
-  // Remove the copied original, we'll write a .webp instead
   await unlink(originalOut);
 
   const webpName = 'original.webp';
@@ -142,21 +154,43 @@ async function produceOriginal(srcPath, outDir, ext, srcW, srcH) {
     }
   }
 
-  // If even quality 75 is too big, drop the original entirely
   await unlink(webpOut);
   return null;
 }
 
+// ---------- main ----------
 async function build() {
   await mkdir(OUT, { recursive: true });
   await mkdir('data', { recursive: true });
 
+  // Load existing data (merge, don't overwrite)
+  const existingIndex = await readJsonSafe(DATA, []);
+  const processed = await readJsonSafe(PROCESSED, {});
+
+  // Index by slug for quick lookup
+  const indexBySlug = new Map();
+  for (const entry of existingIndex) {
+    indexBySlug.set(entry.slug, entry);
+  }
+
   const jobs = await collectFiles();
-  const index = [];
+
+  let added = 0;
+  let skipped = 0;
 
   for (const job of jobs) {
     const { file, srcPath, folder, devices } = job;
     const { category, base } = parseFilename(file);
+
+    // Skip if already processed
+    if (processed[base]) {
+      console.log(`  ⊘ ${base} — already built, skipped`);
+      skipped++;
+      continue;
+    }
+
+    console.log(`\n▸ [${folder}] ${file}`);
+
     const outDir = path.join(OUT, base);
     await mkdir(outDir, { recursive: true });
 
@@ -165,7 +199,6 @@ async function build() {
     const srcH = meta.height ?? 0;
     const orientation = srcW >= srcH ? 'landscape' : 'portrait';
 
-    console.log(`\n▸ [${folder}] ${file}`);
     console.log(`  Source: ${srcW} × ${srcH} (${orientation})`);
 
     if (folder === 'phone' && orientation === 'landscape') {
@@ -208,7 +241,7 @@ async function build() {
       );
     }
 
-    // ---- Original — copy, or re-encode if too large ----
+    // ---- Original ----
     const ext = path.extname(file).toLowerCase().slice(1);
     const originalResult = await produceOriginal(srcPath, outDir, ext, srcW, srcH);
 
@@ -223,7 +256,7 @@ async function build() {
 
       if (originalResult.reencoded) {
         console.log(
-          `  ~ original      → ${originalResult.sizeMB.toFixed(2)} MB  (WebP q${originalResult.quality}, re-encoded from ${ext.toUpperCase()})`
+          `  ~ original      → ${originalResult.sizeMB.toFixed(2)} MB  (WebP q${originalResult.quality})`
         );
       } else {
         console.log(
@@ -231,19 +264,37 @@ async function build() {
         );
       }
     } else {
-      console.log(`  ✗ original      → skipped (could not compress under ${MAX_FILE_MB} MB)`);
+      console.log(`  ✗ original      → skipped (couldn't fit under ${MAX_FILE_MB} MB)`);
     }
 
-    index.push({
+    // ---- Record ----
+    const entry = {
       slug: base,
       title: titleFromSlug(base),
       category,
       variants,
-    });
+    };
+
+    indexBySlug.set(base, entry);
+
+    processed[base] = {
+      builtAt: new Date().toISOString(),
+      variants: variants.map((v) => `${v.device}:${v.width}x${v.height}`),
+    };
+
+    added++;
   }
 
-  await writeFile(DATA, JSON.stringify(index, null, 2));
-  console.log(`\n${index.length} wallpapers indexed.\n`);
+  // Write back merged index (old + new)
+  const merged = Array.from(indexBySlug.values());
+  await writeFile(DATA, JSON.stringify(merged, null, 2));
+  await writeFile(PROCESSED, JSON.stringify(processed, null, 2));
+
+  console.log(`\n─────────────────────────────`);
+  console.log(`  New wallpapers processed: ${added}`);
+  console.log(`  Already built (skipped):  ${skipped}`);
+  console.log(`  Total in index:           ${merged.length}`);
+  console.log(`─────────────────────────────\n`);
 }
 
 build().catch((e) => {
