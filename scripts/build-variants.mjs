@@ -1,17 +1,19 @@
 import sharp from 'sharp';
-import { readdir, mkdir, writeFile, copyFile } from 'fs/promises';
+import { readdir, mkdir, writeFile, copyFile, stat } from 'fs/promises';
 import path from 'path';
 
 const SRC = 'sources';
 const OUT = 'public/wallpapers';
 const DATA = 'data/wallpapers.json';
 
-/**
- * Target variants. The script only generates a variant if the source
- * is at least as large — no upscaling.
- *
- * Order matters: smallest to largest.
- */
+/** Which folders exist and what device variants to generate from each. */
+const FOLDERS = [
+  { dir: 'both',   devices: ['phone', 'laptop'] },
+  { dir: 'phone',  devices: ['phone'] },
+  { dir: 'laptop', devices: ['laptop'] },
+];
+
+/** All possible targets — the script filters by device per folder. */
 const TARGETS = [
   { device: 'phone',  label: '1080 × 1920', width: 1080, height: 1920 },
   { device: 'phone',  label: '1440 × 2560', width: 1440, height: 2560 },
@@ -19,14 +21,8 @@ const TARGETS = [
   { device: 'laptop', label: '2560 × 1440', width: 2560, height: 1440 },
   { device: 'laptop', label: '3840 × 2160', width: 3840, height: 2160 },
   { device: 'laptop', label: '5120 × 2880', width: 5120, height: 2880 },
-  { device: 'laptop', label: '7680 × 4320', width: 7680, height: 4320 },
 ];
 
-/**
- * "anime_kiminonawa-3840x2160-27358.jpg"
- *   → category: "anime"
- *   → base:     "kiminonawa"
- */
 function parseFilename(filename) {
   const stem = filename.replace(/\.[^.]+$/, '');
   const firstUnderscore = stem.indexOf('_');
@@ -55,34 +51,82 @@ function titleFromSlug(s) {
   return s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+async function collectFiles() {
+  /** Returns [{ file, srcPath, folder, devices[] }] */
+  const jobs = [];
+
+  // First, files sitting directly in sources/ — treat as "both"
+  const rootFiles = await readdir(SRC, { withFileTypes: true });
+  for (const d of rootFiles) {
+    if (d.isFile() && /\.(jpe?g|png|webp)$/i.test(d.name)) {
+      jobs.push({
+        file: d.name,
+        srcPath: path.join(SRC, d.name),
+        folder: 'both',
+        devices: ['phone', 'laptop'],
+      });
+    }
+  }
+
+  // Then, files inside each subfolder
+  for (const f of FOLDERS) {
+    const dirPath = path.join(SRC, f.dir);
+    try {
+      const entries = await readdir(dirPath, { withFileTypes: true });
+      for (const d of entries) {
+        if (d.isFile() && /\.(jpe?g|png|webp)$/i.test(d.name)) {
+          jobs.push({
+            file: d.name,
+            srcPath: path.join(dirPath, d.name),
+            folder: f.dir,
+            devices: f.devices,
+          });
+        }
+      }
+    } catch {
+      // folder doesn't exist — skip
+    }
+  }
+
+  return jobs;
+}
+
 async function build() {
   await mkdir(OUT, { recursive: true });
   await mkdir('data', { recursive: true });
 
-  const files = (await readdir(SRC, { withFileTypes: true }))
-    .filter((d) => d.isFile() && /\.(jpe?g|png|webp)$/i.test(d.name))
-    .map((d) => d.name);
-
+  const jobs = await collectFiles();
   const index = [];
 
-  for (const file of files) {
+  for (const job of jobs) {
+    const { file, srcPath, folder, devices } = job;
     const { category, base } = parseFilename(file);
-    const srcPath = path.join(SRC, file);
     const outDir = path.join(OUT, base);
     await mkdir(outDir, { recursive: true });
 
     const meta = await sharp(srcPath).metadata();
     const srcW = meta.width ?? 0;
     const srcH = meta.height ?? 0;
+    const orientation = srcW >= srcH ? 'landscape' : 'portrait';
 
-    console.log(`\n▸ ${file}`);
-    console.log(`  Source: ${srcW} × ${srcH}  [${category}]`);
+    console.log(`\n▸ [${folder}] ${file}`);
+    console.log(`  Source: ${srcW} × ${srcH} (${orientation})`);
+
+    // Warn if a "phone" folder file is landscape or vice versa
+    if (folder === 'phone' && orientation === 'landscape') {
+      console.log(`  ⚠ Warning: this is landscape but in the phone folder`);
+    }
+    if (folder === 'laptop' && orientation === 'portrait') {
+      console.log(`  ⚠ Warning: this is portrait but in the laptop folder`);
+    }
 
     const variants = [];
 
     // ---- Sized variants ----
     for (const t of TARGETS) {
-      // skip if the source is smaller than the target in BOTH dimensions
+      if (!devices.includes(t.device)) continue;
+
+      // Skip if the source is smaller than the target in BOTH dimensions
       if (srcW < t.width && srcH < t.height) continue;
 
       const filename = `${t.device}-${t.width}x${t.height}.webp`;
@@ -96,9 +140,7 @@ async function build() {
         .webp({ quality: 100, effort: 6 })
         .toFile(outPath);
 
-      const { size } = await import('fs').then((fs) =>
-        fs.promises.stat(outPath)
-      );
+      const { size } = await stat(outPath);
 
       variants.push({
         device: t.device,
@@ -109,14 +151,11 @@ async function build() {
       });
 
       console.log(
-        `  ✓ ${t.label.padEnd(12)} → ${(size / 1024 / 1024).toFixed(2)} MB`
+        `  ✓ ${t.device} ${t.label.padEnd(11)} → ${(size / 1024 / 1024).toFixed(2)} MB`
       );
     }
 
     // ---- Original — untouched ----
-    // If the source is JPEG or PNG, copy it byte-for-byte so the user
-    // can download the exact file you uploaded.
-    // If it's WebP, we re-encode at quality 100 (near-lossless).
     const ext = path.extname(file).toLowerCase().slice(1);
     const originalFilename = `original.${ext}`;
     const originalOut = path.join(outDir, originalFilename);
@@ -129,9 +168,7 @@ async function build() {
       await copyFile(srcPath, originalOut);
     }
 
-    const { size: origSize } = await import('fs').then((fs) =>
-      fs.promises.stat(originalOut)
-    );
+    const { size: origSize } = await stat(originalOut);
 
     variants.push({
       device: 'original',
@@ -142,7 +179,7 @@ async function build() {
     });
 
     console.log(
-      `  ✓ Original      → ${(origSize / 1024 / 1024).toFixed(2)} MB`
+      `  ✓ original       → ${(origSize / 1024 / 1024).toFixed(2)} MB`
     );
 
     index.push({

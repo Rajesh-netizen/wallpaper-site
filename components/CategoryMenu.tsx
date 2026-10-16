@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 export const CATEGORIES = [
   { slug: 'anime',       label: 'Anime' },
   { slug: 'lord',        label: 'Lord' },
+  { slug: 'marvel',      label: 'Marvel' },
   { slug: 'aesthetic',   label: 'Aesthetic' },
   { slug: 'automobiles', label: 'Automobiles' },
   { slug: 'nature',      label: 'Nature' },

@@ -1,16 +1,205 @@
 [
   {
-    "slug": "arise-solo-levelling",
-    "title": "Arise Solo Levelling",
-    "category": "anime",
+    "slug": "3-avatar",
+    "title": "3 Avatar",
+    "category": "lord",
     "variants": [
       {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
         "height": 1920,
-        "path": "/wallpapers/arise-solo-levelling/phone-1080x1920.webp"
+        "path": "/wallpapers/3-avatar/phone-1080x1920.webp"
       },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/3-avatar/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5300",
+        "width": 2944,
+        "height": 5300,
+        "path": "/wallpapers/3-avatar/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "krishna-ph",
+    "title": "Krishna Ph",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "original",
+        "label": "Original — 736 × 1308",
+        "width": 736,
+        "height": 1308,
+        "path": "/wallpapers/krishna-ph/original.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "shiva-cosmic",
+    "title": "Shiva Cosmic",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "original",
+        "label": "Original — 736 × 1104",
+        "width": 736,
+        "height": 1104,
+        "path": "/wallpapers/shiva-cosmic/original.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-9",
+    "title": "Ironman 9",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ironman-9/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ironman-9/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2700 × 4800",
+        "width": 2700,
+        "height": 4800,
+        "path": "/wallpapers/ironman-9/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-3",
+    "title": "Ironman 3",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ironman-3/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ironman-3/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5252",
+        "width": 2944,
+        "height": 5252,
+        "path": "/wallpapers/ironman-3/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-6",
+    "title": "Ironman 6",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ironman-6/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ironman-6/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5656",
+        "width": 2944,
+        "height": 5656,
+        "path": "/wallpapers/ironman-6/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-7",
+    "title": "Ironman 7",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ironman-7/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ironman-7/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 1920 × 3428",
+        "width": 1920,
+        "height": 3428,
+        "path": "/wallpapers/ironman-7/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-8",
+    "title": "Ironman 8",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ironman-8/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ironman-8/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5476",
+        "width": 2944,
+        "height": 5476,
+        "path": "/wallpapers/ironman-8/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "arise-solo-levelling",
+    "title": "Arise Solo Levelling",
+    "category": "anime",
+    "variants": [
       {
         "device": "original",
         "label": "Original — 1308 × 736",
@@ -25,20 +214,6 @@
     "title": "Hunter X Hunter",
     "category": "anime",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/hunter-x-hunter/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/hunter-x-hunter/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -75,20 +250,6 @@
     "category": "anime",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/ichigo-kurosaki/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/ichigo-kurosaki/phone-1440x2560.webp"
-      },
-      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -124,20 +285,6 @@
     "category": "anime",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/jujutsu-kaisen/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/jujutsu-kaisen/phone-1440x2560.webp"
-      },
-      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -172,20 +319,6 @@
     "title": "Kiminonawa",
     "category": "anime",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/kiminonawa/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/kiminonawa/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -243,20 +376,6 @@
     "category": "anime",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/my-hero-academia/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/my-hero-academia/phone-1440x2560.webp"
-      },
-      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -292,20 +411,6 @@
     "category": "anime",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/nanami-and-gojo/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/nanami-and-gojo/phone-1440x2560.webp"
-      },
-      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -340,20 +445,6 @@
     "title": "Hanuman 1",
     "category": "lord",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/hanuman-1/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/hanuman-1/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -397,20 +488,6 @@
     "category": "lord",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/hanuman-2/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/hanuman-2/phone-1440x2560.webp"
-      },
-      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -448,24 +525,80 @@
     ]
   },
   {
+    "slug": "hanuman-3",
+    "title": "Hanuman 3",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/hanuman-3/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/hanuman-3/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/hanuman-3/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/hanuman-3/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5228 × 2940",
+        "width": 5228,
+        "height": 2940,
+        "path": "/wallpapers/hanuman-3/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "hanuman-ram",
+    "title": "Hanuman Ram",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/hanuman-ram/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/hanuman-ram/laptop-2560x1440.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 1656",
+        "width": 2944,
+        "height": 1656,
+        "path": "/wallpapers/hanuman-ram/original.png"
+      }
+    ]
+  },
+  {
     "slug": "hanuman",
     "title": "Hanuman",
     "category": "lord",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/hanuman/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/hanuman/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -494,20 +627,6 @@
     "title": "Krishna 2",
     "category": "lord",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/krishna-2/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/krishna-2/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -546,8 +665,8 @@
     ]
   },
   {
-    "slug": "krishna-ph",
-    "title": "Krishna Ph",
+    "slug": "krishna-3-1",
+    "title": "Krishna 3 1",
     "category": "lord",
     "variants": [
       {
@@ -555,14 +674,21 @@
         "label": "1920 × 1080",
         "width": 1920,
         "height": 1080,
-        "path": "/wallpapers/krishna-ph/laptop-1920x1080.webp"
+        "path": "/wallpapers/krishna-3-1/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/krishna-3-1/laptop-2560x1440.webp"
       },
       {
         "device": "original",
-        "label": "Original — 736 × 1308",
-        "width": 736,
-        "height": 1308,
-        "path": "/wallpapers/krishna-ph/original.jpg"
+        "label": "Original — 2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/krishna-3-1/original.png"
       }
     ]
   },
@@ -571,13 +697,6 @@
     "title": "Krishna",
     "category": "lord",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/krishna/phone-1080x1920.webp"
-      },
       {
         "device": "original",
         "label": "Original — 1308 × 736",
@@ -588,8 +707,8 @@
     ]
   },
   {
-    "slug": "shiva-cosmic",
-    "title": "Shiva Cosmic",
+    "slug": "shiva-2",
+    "title": "Shiva 2",
     "category": "lord",
     "variants": [
       {
@@ -597,14 +716,35 @@
         "label": "1920 × 1080",
         "width": 1920,
         "height": 1080,
-        "path": "/wallpapers/shiva-cosmic/laptop-1920x1080.webp"
+        "path": "/wallpapers/shiva-2/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/shiva-2/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/shiva-2/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/shiva-2/laptop-5120x2880.webp"
       },
       {
         "device": "original",
-        "label": "Original — 736 × 1104",
-        "width": 736,
-        "height": 1104,
-        "path": "/wallpapers/shiva-cosmic/original.jpg"
+        "label": "Original — 5228 × 2944",
+        "width": 5228,
+        "height": 2944,
+        "path": "/wallpapers/shiva-2/original.png"
       }
     ]
   },
@@ -613,20 +753,6 @@
     "title": "Shiva White",
     "category": "lord",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/shiva-white/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/shiva-white/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -662,20 +788,6 @@
     "title": "Shiva",
     "category": "lord",
     "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/shiva/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/shiva/phone-1440x2560.webp"
-      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -719,20 +831,6 @@
     "category": "lord",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/shivling/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/shivling/phone-1440x2560.webp"
-      },
-      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -759,6 +857,412 @@
         "width": 3840,
         "height": 2160,
         "path": "/wallpapers/shivling/original.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "spiderman-1",
+    "title": "Spiderman 1",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/spiderman-1/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/spiderman-1/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/spiderman-1/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/spiderman-1/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/spiderman-1/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "spiderman-2",
+    "title": "Spiderman 2",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/spiderman-2/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/spiderman-2/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/spiderman-2/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/spiderman-2/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5228 × 2944",
+        "width": 5228,
+        "height": 2944,
+        "path": "/wallpapers/spiderman-2/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "spiderman-3",
+    "title": "Spiderman 3",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/spiderman-3/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/spiderman-3/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/spiderman-3/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/spiderman-3/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5180 × 2944",
+        "width": 5180,
+        "height": 2944,
+        "path": "/wallpapers/spiderman-3/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "spiderman-4",
+    "title": "Spiderman 4",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/spiderman-4/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/spiderman-4/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/spiderman-4/laptop-3840x2160.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 4800 × 2700",
+        "width": 4800,
+        "height": 2700,
+        "path": "/wallpapers/spiderman-4/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "vemon-2",
+    "title": "Vemon 2",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/vemon-2/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/vemon-2/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/vemon-2/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/vemon-2/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/vemon-2/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "vemon",
+    "title": "Vemon",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/vemon/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/vemon/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/vemon/laptop-3840x2160.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 4736 × 2664",
+        "width": 4736,
+        "height": 2664,
+        "path": "/wallpapers/vemon/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-1",
+    "title": "Ironman 1",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/ironman-1/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/ironman-1/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/ironman-1/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/ironman-1/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/ironman-1/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-2",
+    "title": "Ironman 2",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/ironman-2/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/ironman-2/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/ironman-2/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/ironman-2/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5256",
+        "width": 2944,
+        "height": 5256,
+        "path": "/wallpapers/ironman-2/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-4",
+    "title": "Ironman 4",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/ironman-4/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/ironman-4/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/ironman-4/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/ironman-4/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5256",
+        "width": 2944,
+        "height": 5256,
+        "path": "/wallpapers/ironman-4/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-5",
+    "title": "Ironman 5",
+    "category": "marve",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/ironman-5/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/ironman-5/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/ironman-5/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/ironman-5/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5256",
+        "width": 2944,
+        "height": 5256,
+        "path": "/wallpapers/ironman-5/original.jpeg"
       }
     ]
   }
