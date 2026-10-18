@@ -8,7 +8,6 @@ import {
   unlink,
   readFile,
 } from 'fs/promises';
-import { existsSync } from 'fs';
 import path from 'path';
 
 const SRC = 'sources';
@@ -19,10 +18,12 @@ const PROCESSED = 'data/processed.json';
 const MAX_FILE_MB = 24;
 const FALLBACK_QUALITIES = [95, 92, 88, 85, 80, 75];
 
+// "both" is removed. Files must go into these exact folders.
 const FOLDERS = [
-  { dir: 'both',   devices: ['phone', 'laptop'] },
-  { dir: 'phone',  devices: ['phone'] },
-  { dir: 'laptop', devices: ['laptop'] },
+  { dir: 'phone',      devices: ['phone'] },
+  { dir: 'laptop',     devices: ['laptop'] },
+  { dir: 'motivation', devices: ['phone', 'laptop'] },
+  { dir: 'sports',     devices: ['phone', 'laptop'] },
 ];
 
 const TARGETS = [
@@ -34,7 +35,6 @@ const TARGETS = [
   { device: 'laptop', label: '5120 × 2880', width: 5120, height: 2880 },
 ];
 
-// ---------- helpers ----------
 function parseFilename(filename) {
   const stem = filename.replace(/\.[^.]+$/, '');
   const firstUnderscore = stem.indexOf('_');
@@ -75,18 +75,7 @@ async function readJsonSafe(p, fallback) {
 async function collectFiles() {
   const jobs = [];
 
-  const rootFiles = await readdir(SRC, { withFileTypes: true });
-  for (const d of rootFiles) {
-    if (d.isFile() && /\.(jpe?g|png|webp)$/i.test(d.name)) {
-      jobs.push({
-        file: d.name,
-        srcPath: path.join(SRC, d.name),
-        folder: 'both',
-        devices: ['phone', 'laptop'],
-      });
-    }
-  }
-
+  // Only look inside the subfolders defined above
   for (const f of FOLDERS) {
     const dirPath = path.join(SRC, f.dir);
     try {
@@ -107,11 +96,6 @@ async function collectFiles() {
   return jobs;
 }
 
-/**
- * Produce an "original" variant. Copy byte-for-byte if small enough.
- * If over MAX_FILE_MB, re-encode as WebP at decreasing quality until
- * it fits. Returns null if it can't fit.
- */
 async function produceOriginal(srcPath, outDir, ext, srcW, srcH) {
   const originalOut = path.join(outDir, `original.${ext}`);
   await copyFile(srcPath, originalOut);
@@ -158,16 +142,13 @@ async function produceOriginal(srcPath, outDir, ext, srcW, srcH) {
   return null;
 }
 
-// ---------- main ----------
 async function build() {
   await mkdir(OUT, { recursive: true });
   await mkdir('data', { recursive: true });
 
-  // Load existing data (merge, don't overwrite)
   const existingIndex = await readJsonSafe(DATA, []);
   const processed = await readJsonSafe(PROCESSED, {});
 
-  // Index by slug for quick lookup
   const indexBySlug = new Map();
   for (const entry of existingIndex) {
     indexBySlug.set(entry.slug, entry);
@@ -182,7 +163,6 @@ async function build() {
     const { file, srcPath, folder, devices } = job;
     const { category, base } = parseFilename(file);
 
-    // Skip if already processed
     if (processed[base]) {
       console.log(`  ⊘ ${base} — already built, skipped`);
       skipped++;
@@ -210,7 +190,6 @@ async function build() {
 
     const variants = [];
 
-    // ---- Sized variants ----
     for (const t of TARGETS) {
       if (!devices.includes(t.device)) continue;
       if (srcW < t.width && srcH < t.height) continue;
@@ -241,7 +220,6 @@ async function build() {
       );
     }
 
-    // ---- Original ----
     const ext = path.extname(file).toLowerCase().slice(1);
     const originalResult = await produceOriginal(srcPath, outDir, ext, srcW, srcH);
 
@@ -267,7 +245,6 @@ async function build() {
       console.log(`  ✗ original      → skipped (couldn't fit under ${MAX_FILE_MB} MB)`);
     }
 
-    // ---- Record ----
     const entry = {
       slug: base,
       title: titleFromSlug(base),
@@ -285,7 +262,6 @@ async function build() {
     added++;
   }
 
-  // Write back merged index (old + new)
   const merged = Array.from(indexBySlug.values());
   await writeFile(DATA, JSON.stringify(merged, null, 2));
   await writeFile(PROCESSED, JSON.stringify(processed, null, 2));

@@ -64,6 +64,31 @@ export default function WallpaperCard({ wallpaper, device }: any) {
   const isFav = favourites.includes(wallpaper.slug);
 
   const [copied, setCopied] = useState(false);
+  const [downloads, setDownloads] = useState(0);
+
+  // Load download count from localStorage on mount
+  useEffect(() => {
+    const stored = localStorage.getItem('wallvine_downloads');
+    if (stored) {
+      try {
+        const data = JSON.parse(stored);
+        if (data[wallpaper.slug]) setDownloads(data[wallpaper.slug]);
+      } catch (e) {}
+    }
+  }, [wallpaper.slug]);
+
+  // Function to increment download count
+  const trackDownload = () => {
+    const stored = localStorage.getItem('wallvine_downloads');
+    let data: Record<string, number> = {};
+    try { data = stored ? JSON.parse(stored) : {}; } catch (e) {}
+    
+    const newCount = (data[wallpaper.slug] || 0) + 1;
+    data[wallpaper.slug] = newCount;
+    
+    localStorage.setItem('wallvine_downloads', JSON.stringify(data));
+    setDownloads(newCount);
+  };
 
   const pool = wallpaper.variants
     .filter((v: any) => v.device === device)
@@ -129,7 +154,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
   return (
     <>
-      {/* ---------- Grid card ---------- */}
       <div className="grid-card-wrapper rounded-card">
         <div
           ref={cardRef}
@@ -212,7 +236,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
         </div>
       </div>
 
-      {/* ---------- Modal ---------- */}
       {open && (
         <Portal>
           <div
@@ -233,9 +256,16 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                   <h3 className="font-semibold text-lg truncate">
                     {wallpaper.title}
                   </h3>
-                  <p className="text-xs text-neutral-400 mt-0.5">
-                    {device} · {previewVariant.width} × {previewVariant.height}
-                  </p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <p className="text-xs text-neutral-400">
+                      {device} · {previewVariant.width} × {previewVariant.height}
+                    </p>
+                    {downloads > 0 && (
+                      <span className="text-[10px] uppercase tracking-wider font-semibold text-neon-cyan bg-neon-cyan/10 px-1.5 py-0.5 rounded-sm">
+                        {downloads} Download{downloads !== 1 ? 's' : ''}
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
                   <button
@@ -307,6 +337,7 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 <a
                   href={previewVariant.path}
                   download={downloadName(previewVariant)}
+                  onClick={trackDownload}
                   className="block w-full text-center px-4 py-2.5 rounded-pill bg-neon-gradient text-ink-950 font-medium glow-gradient hover:-translate-y-0.5 transition-transform"
                 >
                   Download for my {device}
@@ -360,6 +391,7 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                     <a
                       href={original.path}
                       download={originalName}
+                      onClick={trackDownload}
                       className="block text-neon-cyan hover:text-white underline decoration-neon-cyan/50 hover:decoration-neon-cyan transition-colors font-medium"
                     >
                       {original.label} — highest quality
@@ -371,6 +403,7 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                       key={v.path}
                       href={v.path}
                       download={downloadName(v)}
+                      onClick={trackDownload}
                       className="block text-neutral-300 hover:text-neon-cyan underline decoration-neutral-600 hover:decoration-neon-cyan transition-colors"
                     >
                       {v.label}

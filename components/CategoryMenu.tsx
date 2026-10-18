@@ -4,10 +4,12 @@ import { useEffect, useRef, useState } from 'react';
 export const CATEGORIES = [
   { slug: 'anime',       label: 'Anime' },
   { slug: 'lord',        label: 'Lord' },
-  { slug: 'marvel',      label: 'Marvel' },
   { slug: 'aesthetic',   label: 'Aesthetic' },
   { slug: 'automobiles', label: 'Automobiles' },
   { slug: 'nature',      label: 'Nature' },
+  { slug: 'marvel',      label: 'Marvel' },
+  { slug: 'motivation',  label: 'Motivation' },
+  { slug: 'sports',      label: 'Sports' },
 ] as const;
 
 export type CategorySlug = 'all' | (typeof CATEGORIES)[number]['slug'];
@@ -75,7 +77,7 @@ export default function CategoryMenu({
             'absolute left-0 top-full mt-2 z-50',
             'min-w-[180px] p-1',
             'rounded-card bg-ink-900 border border-white/10 shadow-card',
-            'animate-fade-up',
+            'animate-fade-up max-h-[70vh] overflow-y-auto',
           ].join(' ')}
         >
           <p className="px-3 pt-2 pb-1 text-[10px] uppercase tracking-[0.18em] text-neutral-500">

@@ -1335,5 +1335,2231 @@
         "path": "/wallpapers/loki/original.png"
       }
     ]
+  },
+  {
+    "slug": "amoled-shiva-1",
+    "title": "Amoled Shiva 1",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/amoled-shiva-1/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/amoled-shiva-1/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/amoled-shiva-1/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "black-and-white-krishna",
+    "title": "Black And White Krishna",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/black-and-white-krishna/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/black-and-white-krishna/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5164",
+        "width": 2944,
+        "height": 5164,
+        "path": "/wallpapers/black-and-white-krishna/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "cosmic-krishna",
+    "title": "Cosmic Krishna",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/cosmic-krishna/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/cosmic-krishna/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/cosmic-krishna/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "cosmic-shiva",
+    "title": "Cosmic Shiva",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/cosmic-shiva/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/cosmic-shiva/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/cosmic-shiva/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "hanuman-cloud",
+    "title": "Hanuman Cloud",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hanuman-cloud/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hanuman-cloud/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/hanuman-cloud/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "hanuman-quotes",
+    "title": "Hanuman Quotes",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hanuman-quotes/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hanuman-quotes/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/hanuman-quotes/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "hanuman-ram-dark",
+    "title": "Hanuman Ram Dark",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hanuman-ram-dark/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hanuman-ram-dark/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/hanuman-ram-dark/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "krishna-and-shiva",
+    "title": "Krishna And Shiva",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/krishna-and-shiva/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/krishna-and-shiva/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/krishna-and-shiva/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "krishna-flute-lotuses",
+    "title": "Krishna Flute Lotuses",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/krishna-flute-lotuses/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/krishna-flute-lotuses/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/krishna-flute-lotuses/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "moon-krishna",
+    "title": "Moon Krishna",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/moon-krishna/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/moon-krishna/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2880 × 4984",
+        "width": 2880,
+        "height": 4984,
+        "path": "/wallpapers/moon-krishna/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "panchamukhi-hanuman",
+    "title": "Panchamukhi Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/panchamukhi-hanuman/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/panchamukhi-hanuman/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2856 × 5120",
+        "width": 2856,
+        "height": 5120,
+        "path": "/wallpapers/panchamukhi-hanuman/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "ram-and-hanuman-dark",
+    "title": "Ram And Hanuman Dark",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ram-and-hanuman-dark/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ram-and-hanuman-dark/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/ram-and-hanuman-dark/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "ram-and-hanuman",
+    "title": "Ram And Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ram-and-hanuman/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ram-and-hanuman/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/ram-and-hanuman/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "shiva-color-trisul",
+    "title": "Shiva Color Trisul",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/shiva-color-trisul/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/shiva-color-trisul/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/shiva-color-trisul/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "shiva-trisul",
+    "title": "Shiva Trisul",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/shiva-trisul/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/shiva-trisul/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/shiva-trisul/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "spiderman-logo",
+    "title": "Spiderman Logo",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/spiderman-logo/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/spiderman-logo/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/spiderman-logo/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "clam-hanuman",
+    "title": "Clam Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/clam-hanuman/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/clam-hanuman/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/clam-hanuman/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/clam-hanuman/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/clam-hanuman/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "flying-hanuman",
+    "title": "Flying Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/flying-hanuman/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/flying-hanuman/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/flying-hanuman/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/flying-hanuman/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/flying-hanuman/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "meditation-hanuman",
+    "title": "Meditation Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/meditation-hanuman/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/meditation-hanuman/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/meditation-hanuman/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/meditation-hanuman/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5256 × 2944",
+        "width": 5256,
+        "height": 2944,
+        "path": "/wallpapers/meditation-hanuman/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "radha-krishna-flute",
+    "title": "Radha Krishna Flute",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/radha-krishna-flute/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/radha-krishna-flute/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/radha-krishna-flute/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/radha-krishna-flute/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/radha-krishna-flute/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "radha-krishna-marriage",
+    "title": "Radha Krishna Marriage",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/radha-krishna-marriage/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/radha-krishna-marriage/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/radha-krishna-marriage/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/radha-krishna-marriage/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/radha-krishna-marriage/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "radha-krishna",
+    "title": "Radha Krishna",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/radha-krishna/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/radha-krishna/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/radha-krishna/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/radha-krishna/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/radha-krishna/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "shiva-and-me",
+    "title": "Shiva And Me",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/shiva-and-me/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/shiva-and-me/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/shiva-and-me/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/shiva-and-me/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/shiva-and-me/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "calm-hanuman",
+    "title": "Calm Hanuman",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/calm-hanuman/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/calm-hanuman/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/calm-hanuman/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/calm-hanuman/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/calm-hanuman/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "abstract",
+    "title": "Abstract",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/abstract/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/abstract/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/abstract/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "clouds",
+    "title": "Clouds",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/clouds/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/clouds/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/clouds/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "japan",
+    "title": "Japan",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/japan/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/japan/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2306 × 4096",
+        "width": 2306,
+        "height": 4096,
+        "path": "/wallpapers/japan/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "krishna-radha",
+    "title": "Krishna Radha",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/krishna-radha/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/krishna-radha/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/krishna-radha/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "leaves",
+    "title": "Leaves",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/leaves/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/leaves/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/leaves/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "lines",
+    "title": "Lines",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/lines/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/lines/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/lines/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "mirror-trees",
+    "title": "Mirror Trees",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/mirror-trees/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/mirror-trees/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/mirror-trees/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "tress",
+    "title": "Tress",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/tress/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/tress/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2940 × 5088",
+        "width": 2940,
+        "height": 5088,
+        "path": "/wallpapers/tress/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "dark-cloud",
+    "title": "Dark Cloud",
+    "category": "aesthitic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/dark-cloud/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/dark-cloud/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/dark-cloud/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "black-cat",
+    "title": "Black Cat",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/black-cat/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/black-cat/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5252",
+        "width": 2944,
+        "height": 5252,
+        "path": "/wallpapers/black-cat/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "color-nature",
+    "title": "Color Nature",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/color-nature/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/color-nature/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2940 × 5236",
+        "width": 2940,
+        "height": 5236,
+        "path": "/wallpapers/color-nature/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "night-city",
+    "title": "Night City",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/night-city/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/night-city/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5236",
+        "width": 2944,
+        "height": 5236,
+        "path": "/wallpapers/night-city/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "vision-tree",
+    "title": "Vision Tree",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/vision-tree/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/vision-tree/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2940 × 5236",
+        "width": 2940,
+        "height": 5236,
+        "path": "/wallpapers/vision-tree/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "white-deer",
+    "title": "White Deer",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/white-deer/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/white-deer/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/white-deer/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "mountain",
+    "title": "Mountain",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/mountain/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/mountain/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/mountain/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "cute-demonslayer",
+    "title": "Cute Demonslayer",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/cute-demonslayer/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/cute-demonslayer/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2700 × 4800",
+        "width": 2700,
+        "height": 4800,
+        "path": "/wallpapers/cute-demonslayer/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "gojo-look",
+    "title": "Gojo Look",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/gojo-look/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/gojo-look/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2560 × 4552",
+        "width": 2560,
+        "height": 4552,
+        "path": "/wallpapers/gojo-look/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "gojo",
+    "title": "Gojo",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/gojo/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/gojo/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/gojo/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "jinwoo",
+    "title": "Jinwoo",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/jinwoo/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/jinwoo/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/jinwoo/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "king",
+    "title": "King",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/king/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/king/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/king/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "luffy-anime",
+    "title": "Luffy Anime",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/luffy-anime/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/luffy-anime/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5856",
+        "width": 2944,
+        "height": 5856,
+        "path": "/wallpapers/luffy-anime/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "luffyart",
+    "title": "Luffyart",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/luffyart/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/luffyart/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/luffyart/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "red-black-sukuna",
+    "title": "Red Black Sukuna",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/red-black-sukuna/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/red-black-sukuna/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/red-black-sukuna/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "red-itachi",
+    "title": "Red Itachi",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/red-itachi/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/red-itachi/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/red-itachi/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "rengoku",
+    "title": "Rengoku",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/rengoku/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/rengoku/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/rengoku/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "sanemi",
+    "title": "Sanemi",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sanemi/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sanemi/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/sanemi/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "sukuna-destruction",
+    "title": "Sukuna Destruction",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sukuna-destruction/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sukuna-destruction/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/sukuna-destruction/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "sukuna-gojo",
+    "title": "Sukuna Gojo",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sukuna-gojo/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sukuna-gojo/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/sukuna-gojo/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "sukunaside",
+    "title": "Sukunaside",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sukunaside/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sukunaside/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/sukunaside/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "sukunasmile",
+    "title": "Sukunasmile",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sukunasmile/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sukunasmile/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 6736",
+        "width": 2944,
+        "height": 6736,
+        "path": "/wallpapers/sukunasmile/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "tanjiro",
+    "title": "Tanjiro",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/tanjiro/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/tanjiro/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/tanjiro/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "toji",
+    "title": "Toji",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/toji/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/toji/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/toji/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "yorichi",
+    "title": "Yorichi",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/yorichi/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/yorichi/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 4484",
+        "width": 2944,
+        "height": 4484,
+        "path": "/wallpapers/yorichi/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "yorichimoon",
+    "title": "Yorichimoon",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/yorichimoon/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/yorichimoon/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/yorichimoon/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "yuzi-sukuna",
+    "title": "Yuzi Sukuna",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/yuzi-sukuna/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/yuzi-sukuna/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/yuzi-sukuna/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "krishnanew",
+    "title": "Krishnanew",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/krishnanew/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/krishnanew/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/krishnanew/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "spiderman",
+    "title": "Spiderman",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/spiderman/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/spiderman/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/spiderman/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "black",
+    "title": "Black",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/black/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/black/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/black/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "blackgoku",
+    "title": "Blackgoku",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/blackgoku/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/blackgoku/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/blackgoku/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/blackgoku/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5212 × 2944",
+        "width": 5212,
+        "height": 2944,
+        "path": "/wallpapers/blackgoku/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "gojo-blue-eyes",
+    "title": "Gojo Blue Eyes",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/gojo-blue-eyes/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/gojo-blue-eyes/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/gojo-blue-eyes/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/gojo-blue-eyes/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5272 × 2944",
+        "width": 5272,
+        "height": 2944,
+        "path": "/wallpapers/gojo-blue-eyes/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "itachi",
+    "title": "Itachi",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/itachi/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/itachi/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/itachi/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/itachi/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5252 × 2944",
+        "width": 5252,
+        "height": 2944,
+        "path": "/wallpapers/itachi/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "king-smile",
+    "title": "King Smile",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/king-smile/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/king-smile/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/king-smile/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/king-smile/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5248 × 2944",
+        "width": 5248,
+        "height": 2944,
+        "path": "/wallpapers/king-smile/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "madara",
+    "title": "Madara",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/madara/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/madara/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/madara/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/madara/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5236 × 2944",
+        "width": 5236,
+        "height": 2944,
+        "path": "/wallpapers/madara/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "obito",
+    "title": "Obito",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/obito/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/obito/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/obito/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/obito/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/obito/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "sukuna-furious",
+    "title": "Sukuna Furious",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/sukuna-furious/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/sukuna-furious/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/sukuna-furious/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/sukuna-furious/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5232 × 2944",
+        "width": 5232,
+        "height": 2944,
+        "path": "/wallpapers/sukuna-furious/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "yorich-origen",
+    "title": "Yorich Origen",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/yorich-origen/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/yorich-origen/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/yorich-origen/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/yorich-origen/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 5272 × 2944",
+        "width": 5272,
+        "height": 2944,
+        "path": "/wallpapers/yorich-origen/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "zoro",
+    "title": "Zoro",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/zoro/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/zoro/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/zoro/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/zoro/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 4420 × 2940",
+        "width": 4420,
+        "height": 2940,
+        "path": "/wallpapers/zoro/original.png"
+      }
+    ]
   }
 ]

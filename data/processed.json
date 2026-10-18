@@ -349,5 +349,607 @@
       "laptop:5120x2880",
       "original:5256x2944"
     ]
+  },
+  "amoled-shiva-1": {
+    "builtAt": "2026-10-18T02:08:22.137Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "black-and-white-krishna": {
+    "builtAt": "2026-10-18T02:08:24.971Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5164"
+    ]
+  },
+  "cosmic-krishna": {
+    "builtAt": "2026-10-18T02:08:26.853Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "cosmic-shiva": {
+    "builtAt": "2026-10-18T02:08:28.763Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "hanuman-cloud": {
+    "builtAt": "2026-10-18T02:08:31.378Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "hanuman-quotes": {
+    "builtAt": "2026-10-18T02:08:33.544Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "hanuman-ram-dark": {
+    "builtAt": "2026-10-18T02:08:35.378Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5888"
+    ]
+  },
+  "krishna-and-shiva": {
+    "builtAt": "2026-10-18T02:08:37.119Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "krishna-flute-lotuses": {
+    "builtAt": "2026-10-18T02:08:39.864Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "moon-krishna": {
+    "builtAt": "2026-10-18T02:08:41.929Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2880x4984"
+    ]
+  },
+  "panchamukhi-hanuman": {
+    "builtAt": "2026-10-18T02:08:45.543Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2856x5120"
+    ]
+  },
+  "ram-and-hanuman-dark": {
+    "builtAt": "2026-10-18T02:08:47.321Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "ram-and-hanuman": {
+    "builtAt": "2026-10-18T02:08:50.223Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "shiva-color-trisul": {
+    "builtAt": "2026-10-18T02:08:52.602Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "shiva-trisul": {
+    "builtAt": "2026-10-18T02:08:54.362Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "spiderman-logo": {
+    "builtAt": "2026-10-18T02:08:55.764Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "clam-hanuman": {
+    "builtAt": "2026-10-18T02:09:12.679Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:6688x3764"
+    ]
+  },
+  "flying-hanuman": {
+    "builtAt": "2026-10-18T02:09:23.459Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "meditation-hanuman": {
+    "builtAt": "2026-10-18T02:09:33.798Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5256x2944"
+    ]
+  },
+  "radha-krishna-flute": {
+    "builtAt": "2026-10-18T02:09:43.846Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "radha-krishna-marriage": {
+    "builtAt": "2026-10-18T02:09:53.642Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "radha-krishna": {
+    "builtAt": "2026-10-18T02:10:00.832Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "shiva-and-me": {
+    "builtAt": "2026-10-18T02:10:06.985Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "calm-hanuman": {
+    "builtAt": "2026-10-18T02:18:02.795Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:6688x3764"
+    ]
+  },
+  "abstract": {
+    "builtAt": "2026-10-18T02:40:14.224Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "clouds": {
+    "builtAt": "2026-10-18T02:40:17.558Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "japan": {
+    "builtAt": "2026-10-18T02:40:19.881Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2306x4096"
+    ]
+  },
+  "krishna-radha": {
+    "builtAt": "2026-10-18T02:40:22.984Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "leaves": {
+    "builtAt": "2026-10-18T02:40:26.267Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5888"
+    ]
+  },
+  "lines": {
+    "builtAt": "2026-10-18T02:40:29.113Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5888"
+    ]
+  },
+  "mirror-trees": {
+    "builtAt": "2026-10-18T02:40:31.028Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "tress": {
+    "builtAt": "2026-10-18T02:40:34.204Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2940x5088"
+    ]
+  },
+  "dark-cloud": {
+    "builtAt": "2026-10-18T02:40:36.923Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "black-cat": {
+    "builtAt": "2026-10-18T03:06:55.661Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5252"
+    ]
+  },
+  "color-nature": {
+    "builtAt": "2026-10-18T03:06:59.073Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2940x5236"
+    ]
+  },
+  "night-city": {
+    "builtAt": "2026-10-18T03:07:01.713Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5236"
+    ]
+  },
+  "vision-tree": {
+    "builtAt": "2026-10-18T03:07:09.548Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2940x5236"
+    ]
+  },
+  "white-deer": {
+    "builtAt": "2026-10-18T03:07:12.639Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5888"
+    ]
+  },
+  "mountain": {
+    "builtAt": "2026-10-18T03:07:15.287Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "cute-demonslayer": {
+    "builtAt": "2026-10-18T05:36:33.974Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2700x4800"
+    ]
+  },
+  "gojo-look": {
+    "builtAt": "2026-10-18T05:36:36.106Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2560x4552"
+    ]
+  },
+  "gojo": {
+    "builtAt": "2026-10-18T05:36:38.187Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "jinwoo": {
+    "builtAt": "2026-10-18T05:36:41.057Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "king": {
+    "builtAt": "2026-10-18T05:36:42.875Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "luffy-anime": {
+    "builtAt": "2026-10-18T05:36:45.730Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5856"
+    ]
+  },
+  "luffyart": {
+    "builtAt": "2026-10-18T05:36:49.125Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "red-black-sukuna": {
+    "builtAt": "2026-10-18T05:36:51.375Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "red-itachi": {
+    "builtAt": "2026-10-18T05:36:53.642Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "rengoku": {
+    "builtAt": "2026-10-18T05:36:55.936Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "sanemi": {
+    "builtAt": "2026-10-18T05:36:57.910Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "sukuna-destruction": {
+    "builtAt": "2026-10-18T05:37:00.661Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "sukuna-gojo": {
+    "builtAt": "2026-10-18T05:37:03.470Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "sukunaside": {
+    "builtAt": "2026-10-18T05:37:05.766Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "sukunasmile": {
+    "builtAt": "2026-10-18T05:37:08.681Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x6736"
+    ]
+  },
+  "tanjiro": {
+    "builtAt": "2026-10-18T05:37:16.306Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5888"
+    ]
+  },
+  "toji": {
+    "builtAt": "2026-10-18T05:37:18.552Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "yorichi": {
+    "builtAt": "2026-10-18T05:37:20.375Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x4484"
+    ]
+  },
+  "yorichimoon": {
+    "builtAt": "2026-10-18T05:37:23.040Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "yuzi-sukuna": {
+    "builtAt": "2026-10-18T05:37:25.411Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "krishnanew": {
+    "builtAt": "2026-10-18T05:37:28.279Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5228"
+    ]
+  },
+  "spiderman": {
+    "builtAt": "2026-10-18T05:37:30.738Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "black": {
+    "builtAt": "2026-10-18T05:37:32.441Z",
+    "variants": [
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:2944x5232"
+    ]
+  },
+  "blackgoku": {
+    "builtAt": "2026-10-18T05:37:39.426Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5212x2944"
+    ]
+  },
+  "gojo-blue-eyes": {
+    "builtAt": "2026-10-18T05:37:48.878Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5272x2944"
+    ]
+  },
+  "itachi": {
+    "builtAt": "2026-10-18T05:37:58.502Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5252x2944"
+    ]
+  },
+  "king-smile": {
+    "builtAt": "2026-10-18T05:38:05.121Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5248x2944"
+    ]
+  },
+  "madara": {
+    "builtAt": "2026-10-18T05:38:14.356Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5236x2944"
+    ]
+  },
+  "obito": {
+    "builtAt": "2026-10-18T05:38:21.581Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:6688x3764"
+    ]
+  },
+  "sukuna-furious": {
+    "builtAt": "2026-10-18T05:38:29.880Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5232x2944"
+    ]
+  },
+  "yorich-origen": {
+    "builtAt": "2026-10-18T05:38:39.956Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:5272x2944"
+    ]
+  },
+  "zoro": {
+    "builtAt": "2026-10-18T05:38:47.709Z",
+    "variants": [
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:4420x2940"
+    ]
   }
 }
