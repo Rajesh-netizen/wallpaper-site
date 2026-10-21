@@ -45,10 +45,7 @@ export default function Gallery({
   const [isClient, setIsClient] = useState(false);
   const { favourites } = useFavourites();
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
+  useEffect(() => { setIsClient(true); }, []);
   useEffect(() => {
     const saved = localStorage.getItem('device') as Device | null;
     setDevice(saved ?? detect());
@@ -65,12 +62,7 @@ export default function Gallery({
   );
 
   const feedList = useMemo(() => {
-    const filtered =
-      category === 'all'
-        ? withDevice
-        : withDevice.filter((w) => w.category === category);
-    // Only shuffle on the client — Math.random() during SSR causes
-    // a hydration mismatch because server and client pick different orders.
+    const filtered = category === 'all' ? withDevice : withDevice.filter((w) => w.category === category);
     return isClient ? shuffle(filtered) : filtered;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [withDevice, category, seed, isClient]);
@@ -78,9 +70,7 @@ export default function Gallery({
   const searchList = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return withDevice;
-    return withDevice.filter(
-      (w) => w.title.toLowerCase().includes(q) || w.slug.toLowerCase().includes(q)
-    );
+    return withDevice.filter((w) => w.title.toLowerCase().includes(q) || w.slug.toLowerCase().includes(q));
   }, [withDevice, query]);
 
   const favouritesList = useMemo(
@@ -91,46 +81,23 @@ export default function Gallery({
   const list = tab === 'feed' ? feedList : tab === 'search' ? searchList : favouritesList;
 
   return (
-    <section
-      id="latest"
-      className="relative w-full pb-20 scroll-mt-16 overflow-hidden"
-    >
-      {/* ---------- Cube lattice background ---------- */}
-      <div className="absolute inset-0 -z-10 pointer-events-none">
-        <CubeBackground />
-      </div>
+    <section id="latest" className="relative w-full pb-10 scroll-mt-16 overflow-hidden">
+      <div className="absolute inset-0 -z-10 pointer-events-none"><CubeBackground /></div>
+      <div aria-hidden className="absolute inset-0 -z-10 pointer-events-none" style={{ background: 'radial-gradient(ellipse at center, transparent 45%, rgba(5,5,10,0.85) 100%)' }} />
 
-      {/* ---------- Fade edges to black so it doesn't look boxy ---------- */}
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse at center, transparent 45%, rgba(5,5,10,0.85) 100%)',
-        }}
-      />
-
-      {/* ---------- Content wrapper ---------- */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header row — blur-fade on every tab/category change */}
-        <div
-          key={`${tab}-${category}`}
-          className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6"
-        >
+        <div key={`${tab}-${category}`} className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6 border-b border-white/10 pb-4">
           <div>
-            <h2 className="blur-fade-in blur-fade-in-1 text-2xl font-semibold tracking-tight">
-              {tab === 'feed' && (category === 'all' ? 'Feed' : labelFor(category))}
-              {tab === 'search' && 'Search'}
-              {tab === 'favourites' && 'Favourites'}
+            <h2 className="blur-fade-in blur-fade-in-1 text-2xl font-bold tracking-tight">
+              {tab === 'feed' && (category === 'all' ? 'Latest Additions' : labelFor(category))}
+              {tab === 'search' && 'Search Results'}
+              {tab === 'favourites' && 'Saved Wallpapers'}
             </h2>
-            <p className="blur-fade-in blur-fade-in-2 text-sm text-neutral-300 mt-1">
-              {tab === 'feed' && category === 'all' && 'Random picks, reshuffled every visit.'}
-              {tab === 'feed' && category !== 'all' && `Showing ${labelFor(category)} wallpapers.`}
-              {tab === 'search' && 'Find a wallpaper by name.'}
-              {tab === 'favourites' &&
-                (favourites.length === 0
-                  ? 'Tap the heart on any wallpaper to save it here.'
-                  : `${favourites.length} saved.`)}
+            <p className="blur-fade-in blur-fade-in-2 text-sm text-neutral-400 mt-1">
+              {tab === 'feed' && category === 'all' && 'Freshly added and randomly sorted.'}
+              {tab === 'feed' && category !== 'all' && `Browsing ${labelFor(category)} collection.`}
+              {tab === 'search' && 'Finding the perfect match.'}
+              {tab === 'favourites' && (favourites.length === 0 ? 'Nothing saved yet.' : `${favourites.length} saved.`)}
             </p>
           </div>
 
@@ -139,66 +106,48 @@ export default function Gallery({
               <button
                 type="button"
                 onClick={() => setSeed((s) => s + 1)}
-                className="px-4 py-2 rounded-pill text-sm font-medium border border-white/10 text-neutral-200
-                           hover:bg-white/5 hover:border-white/25 hover:text-white
-                           active:translate-y-[1px]
-                           transition-all duration-200
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan"
+                className="group relative px-4 py-1.5 rounded-md text-xs font-medium border border-white/10 text-neutral-300 hover:text-white transition-all duration-300 hover:border-neon-cyan hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] bg-ink-800 overflow-hidden"
               >
-                ↻ Reshuffle
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none" />
+                <span className="relative z-10">Shuffle</span>
               </button>
             )}
 
-            <div
-              role="tablist"
-              aria-label="Device"
-              className="inline-flex p-1 rounded-pill bg-ink-800 border border-white/10"
-            >
-              {(['phone', 'laptop'] as Device[]).map((d) => {
-                const active = device === d;
-                return (
-                  <button
-                    key={d}
-                    role="tab"
-                    aria-selected={active}
-                    onClick={() => pickDevice(d)}
-                    className={[
-                      'px-4 py-1.5 text-sm rounded-pill capitalize transition-all duration-200',
-                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
-                      active
-                        ? 'bg-white/15 text-white shadow-glow-cyan'
-                        : 'text-neutral-300 hover:text-white hover:bg-white/5',
-                    ].join(' ')}
-                  >
-                    {d}
-                  </button>
-                );
-              })}
+            {/* NEW GLOWING TOGGLE SWITCH */}
+            <div className="relative flex items-center p-1 bg-ink-900 border border-white/10 rounded-full shadow-inner">
+              {/* Sliding glowing background */}
+              <div 
+                className={`absolute top-1 bottom-1 w-[calc(50%-4px)] rounded-full bg-neon-cyan/20 border border-neon-cyan/50 shadow-[0_0_12px_rgba(34,211,238,0.5)] transition-transform duration-300 ease-out ${
+                  device === 'laptop' ? 'translate-x-[calc(100%+4px)]' : 'translate-x-0'
+                }`} 
+              />
+              
+              <button
+                onClick={() => pickDevice('phone')}
+                className={`relative z-10 px-4 py-1.5 text-xs font-semibold capitalize transition-colors duration-300 ${
+                  device === 'phone' ? 'text-neon-cyan drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]' : 'text-neutral-400 hover:text-white'
+                }`}
+              >
+                Phone
+              </button>
+              <button
+                onClick={() => pickDevice('laptop')}
+                className={`relative z-10 px-4 py-1.5 text-xs font-semibold capitalize transition-colors duration-300 ${
+                  device === 'laptop' ? 'text-neon-cyan drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]' : 'text-neutral-400 hover:text-white'
+                }`}
+              >
+                Laptop
+              </button>
             </div>
           </div>
         </div>
 
-        {/* Grid */}
         {list.length === 0 ? (
-          <p className="text-neutral-400 py-16 text-center">
-            {tab === 'feed' && category !== 'all' &&
-              `No ${device} wallpapers in “${labelFor(category)}” yet.`}
-            {tab === 'feed' && category === 'all' && `No ${device} wallpapers yet.`}
-            {tab === 'search' &&
-              (query ? `No results for “${query}”.` : `No ${device} wallpapers to search.`)}
-            {tab === 'favourites' &&
-              (favourites.length === 0
-                ? 'No favourites yet — tap a heart to save one.'
-                : `None of your favourites have a ${device} version.`)}
-          </p>
+          <p className="text-neutral-400 py-16 text-center">No wallpapers found.</p>
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {list.map((w, i) => (
-              <div
-                key={w.slug}
-                className="blur-fade-in"
-                style={{ animationDelay: `${Math.min(i * 40, 600)}ms` }}
-              >
+              <div key={w.slug} className="blur-fade-in" style={{ animationDelay: `${Math.min(i * 40, 600)}ms` }}>
                 <WallpaperCard wallpaper={w} device={device} />
               </div>
             ))}

@@ -11,7 +11,11 @@ export default function Nav({
   onCategoryChange: (c: CategorySlug) => void;
 }) {
   return (
-    <header className="sticky top-0 z-40 backdrop-blur bg-ink-950/70 border-b border-white/5">
+    <header 
+      className="sticky top-0 z-40 w-full border-b border-white/10 
+                 bg-white/[0.03] backdrop-blur-[20px] backdrop-saturate-150
+                 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_4px_30px_rgba(0,0,0,0.5)]"
+    >
       <nav className="mx-auto max-w-7xl px-5 h-16 flex items-center gap-3">
         <CategoryMenu active={category} onChange={onCategoryChange} />
 
@@ -24,7 +28,7 @@ export default function Nav({
             aria-hidden
             className="h-6 w-6 rounded-md bg-neon-gradient shadow-glow-pink group-hover:shadow-glow-cyan transition-shadow duration-300"
           />
-          <span className="brand-text relative text-lg font-semibold tracking-tight">
+          <span className="brand-text relative text-lg font-semibold tracking-tight text-white">
             Wall<span className="text-neon">vine</span>
 
             {/* Sparkles fall from behind the underline */}
