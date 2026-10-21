@@ -9,16 +9,27 @@ import { ModalProvider } from '@/components/ModalContext';
 import type { CategorySlug } from '@/components/CategoryMenu';
 import index from '@/data/wallpapers.json';
 import Link from 'next/link';
+import IntroScreen from '@/components/IntroScreen';
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>('feed');
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<CategorySlug>('all');
   const { favourites } = useFavourites();
+  
+  // Tracks when the intro screen finishes
+  const [introFinished, setIntroFinished] = useState(false);
 
   return (
     <ModalProvider>
-      <Nav category={category} onCategoryChange={setCategory} />
+      <IntroScreen onComplete={() => setIntroFinished(true)} />
+      
+      <Nav 
+        category={category} 
+        onCategoryChange={setCategory} 
+        introFinished={introFinished} 
+      />
+      
       <main className="flex-1 font-body">
         <Hero />
 
@@ -41,7 +52,6 @@ export default function Home() {
 
         <Gallery wallpapers={index} tab={tab} query={query} category={category} />
         
-        {/* Airy spacing for the About section */}
         <section id="about-us" className="border-t border-white/10 bg-ink-900/20 py-32 mt-16">
           <div className="mx-auto max-w-4xl px-6">
             <h2 className="text-4xl font-display font-bold tracking-tight mb-8 text-white">About Wallvine</h2>

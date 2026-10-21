@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { AuroraBackground } from './ui/aurora-background';
+import { AuroraMesh } from './ui/aurora-mesh';
 
 export default function Hero() {
   const points = [
@@ -10,7 +10,7 @@ export default function Hero() {
   ];
 
   return (
-    <AuroraBackground className="min-h-[500px] md:min-h-[700px] flex items-center">
+    <AuroraMesh className="min-h-[500px] md:min-h-[700px] flex items-center">
       <div className="relative w-full mx-auto max-w-6xl px-6 md:px-12 pt-16 pb-12 md:pt-24 md:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
@@ -30,21 +30,16 @@ export default function Hero() {
             </h1>
 
             <div className="hero-cta mt-10 flex items-center gap-6">
-              
-              {/* Hover + Glow + Glass effect Button */}
               <Link
                 href="#latest"
                 className="group relative px-8 py-4 rounded-sm bg-white/5 border border-white/20 text-white font-bold font-display text-lg transition-all duration-300 hover:bg-white/10 hover:border-accent/50 hover:text-accent hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:-translate-y-0.5 overflow-hidden"
               >
-                {/* Shimmer sweep on hover */}
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none" />
                 <span className="relative z-10">View Collection</span>
               </Link>
-              
             </div>
           </div>
 
-          {/* Lightweight Glass Feature List */}
           <div className="lg:col-span-5 flex flex-col gap-6 lg:pl-10 lg:border-l border-white/10 p-6 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm">
             {points.map((p, i) => (
               <div 
@@ -65,6 +60,6 @@ export default function Hero() {
 
         </div>
       </div>
-    </AuroraBackground>
+    </AuroraMesh>
   );
 }
