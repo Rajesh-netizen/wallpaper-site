@@ -19,51 +19,55 @@ export default function Home() {
   return (
     <ModalProvider>
       <Nav category={category} onCategoryChange={setCategory} />
-      <main className="flex-1">
+      <main className="flex-1 font-body">
         <Hero />
 
         {tab === 'search' && (
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-4">
+          <div className="mx-auto max-w-7xl px-6 lg:px-12 mb-6">
             <input
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search wallpapers by name or category..."
+              placeholder="Search by name or category..."
               autoFocus
-              className="w-full sm:max-w-md px-4 py-2.5 rounded-md
-                         bg-ink-800 border border-white/10
-                         text-sm text-white placeholder:text-neutral-400
+              className="w-full sm:max-w-md px-4 py-3 rounded-[2px]
+                         bg-ink-900 border border-white/20
+                         text-sm text-white placeholder:text-neutral-500 font-mono
                          transition-colors duration-200
-                         hover:border-white/25
-                         focus:outline-none focus:border-neon-cyan/60"
+                         focus:outline-none focus:border-accent"
             />
           </div>
         )}
 
         <Gallery wallpapers={index} tab={tab} query={query} category={category} />
         
-        {/* New About Us Section at the bottom */}
-        <section id="about-us" className="border-t border-white/5 bg-ink-900/30 py-20 mt-10">
-          <div className="mx-auto max-w-4xl px-5 text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">About Us</h2>
-            <p className="text-neutral-400 leading-relaxed text-lg mb-8">
-              Wallvine started as a personal project to solve a simple problem: finding high-quality wallpapers that actually look good on modern screens. 
-              We don't believe in cluttering the web with ads, pop-ups, or fake download links. 
-              Every image on this site is manually curated, optimized for performance, and delivered exactly as it was intended to be seen.
-            </p>
-            <div className="flex justify-center gap-6 text-sm font-medium">
-              <Link href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-neon-cyan transition-colors">
+        {/* Airy spacing for the About section */}
+        <section id="about-us" className="border-t border-white/10 bg-ink-900/20 py-32 mt-16">
+          <div className="mx-auto max-w-4xl px-6">
+            <h2 className="text-4xl font-display font-bold tracking-tight mb-8 text-white">About Wallvine</h2>
+            <div className="space-y-6 text-neutral-400 leading-relaxed text-xl font-light max-w-3xl">
+              <p>
+                Finding a good wallpaper shouldn't be this hard. Most sites are filled with pop-ups, trick download buttons, and images that get stretched to fit your phone screen.
+              </p>
+              <p>
+                I built Wallvine to be the exact opposite of that. It's a stripped-down, personal collection. If I wouldn't use it as my own background, it doesn't go on the site. Everything is optimized, sharp, and ready to use immediately without any extra hassle.
+              </p>
+            </div>
+            
+            <div className="mt-12 flex gap-8 text-sm font-mono uppercase tracking-wider">
+              <Link href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-accent transition-colors">
                 Twitter
               </Link>
-              <Link href="https://github.com/Rajesh-netizen" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-neon-cyan transition-colors">
+              <Link href="https://github.com/Rajesh-netizen" target="_blank" rel="noopener noreferrer" className="text-neutral-300 hover:text-accent transition-colors">
                 GitHub
               </Link>
-              <Link href="mailto:contact@wallvine.com" className="text-neutral-300 hover:text-neon-cyan transition-colors">
-                Contact
+              <Link href="mailto:contact@wallvine.com" className="text-neutral-300 hover:text-accent transition-colors">
+                Email
               </Link>
             </div>
-            <p className="text-xs text-neutral-600 mt-12">
-              &copy; {new Date().getFullYear()} Wallvine. All rights reserved.
+            
+            <p className="text-xs text-neutral-600 mt-20 font-mono">
+              &copy; {new Date().getFullYear()} Wallvine. Built by a human.
             </p>
           </div>
         </section>
