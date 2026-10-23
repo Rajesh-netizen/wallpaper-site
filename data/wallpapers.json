@@ -5,6 +5,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/3-avatar/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -33,6 +40,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna-ph/thumbnail-400x400.webp"
+      },
+      {
         "device": "original",
         "label": "Original — 736 × 1308",
         "width": 736,
@@ -47,6 +61,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva-cosmic/thumbnail-400x400.webp"
+      },
+      {
         "device": "original",
         "label": "Original — 736 × 1104",
         "width": 736,
@@ -56,38 +77,17 @@
     ]
   },
   {
-    "slug": "ironman-9",
-    "title": "Ironman 9",
-    "category": "marvel",
-    "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/ironman-9/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/ironman-9/phone-1440x2560.webp"
-      },
-      {
-        "device": "original",
-        "label": "Original — 2700 × 4800",
-        "width": 2700,
-        "height": 4800,
-        "path": "/wallpapers/ironman-9/original.jpeg"
-      }
-    ]
-  },
-  {
     "slug": "ironman-3",
     "title": "Ironman 3",
     "category": "marvel",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-3/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -117,6 +117,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-6/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -144,6 +151,13 @@
     "title": "Ironman 7",
     "category": "marvel",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-7/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -173,6 +187,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-8/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -201,6 +222,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/arise-solo-levelling/thumbnail-400x400.webp"
+      },
+      {
         "device": "original",
         "label": "Original — 1308 × 736",
         "width": 1308,
@@ -214,6 +242,13 @@
     "title": "Hunter X Hunter",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hunter-x-hunter/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -250,6 +285,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ichigo-kurosaki/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -284,6 +326,13 @@
     "title": "Jujutsu Kaisen",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/jujutsu-kaisen/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -320,6 +369,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/kiminonawa/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -355,6 +411,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/luffy/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -375,6 +438,13 @@
     "title": "My Hero Academia",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/my-hero-academia/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -411,6 +481,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/nanami-and-gojo/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -445,6 +522,13 @@
     "title": "Hanuman 1",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-1/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -488,6 +572,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-2/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -529,6 +620,13 @@
     "title": "Hanuman 3",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-3/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -572,6 +670,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-ram/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -600,6 +705,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -627,6 +739,13 @@
     "title": "Krishna 2",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna-2/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -665,38 +784,17 @@
     ]
   },
   {
-    "slug": "krishna-3-1",
-    "title": "Krishna 3 1",
-    "category": "lord",
-    "variants": [
-      {
-        "device": "laptop",
-        "label": "1920 × 1080",
-        "width": 1920,
-        "height": 1080,
-        "path": "/wallpapers/krishna-3-1/laptop-1920x1080.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "2560 × 1440",
-        "width": 2560,
-        "height": 1440,
-        "path": "/wallpapers/krishna-3-1/laptop-2560x1440.webp"
-      },
-      {
-        "device": "original",
-        "label": "Original — 2560 × 1440",
-        "width": 2560,
-        "height": 1440,
-        "path": "/wallpapers/krishna-3-1/original.png"
-      }
-    ]
-  },
-  {
     "slug": "krishna",
     "title": "Krishna",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna/thumbnail-400x400.webp"
+      },
       {
         "device": "original",
         "label": "Original — 1308 × 736",
@@ -711,6 +809,13 @@
     "title": "Shiva 2",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva-2/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -754,6 +859,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva-white/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -788,6 +900,13 @@
     "title": "Shiva",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -831,6 +950,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shivling/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -865,6 +991,13 @@
     "title": "Spiderman 1",
     "category": "marvel",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/spiderman-1/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -908,6 +1041,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/spiderman-2/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -949,6 +1089,13 @@
     "title": "Spiderman 3",
     "category": "marvel",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/spiderman-3/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -992,6 +1139,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/spiderman-4/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -1026,6 +1180,13 @@
     "title": "Vemon 2",
     "category": "marvel",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/vemon-2/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -1069,6 +1230,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/vemon/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -1103,6 +1271,13 @@
     "title": "Ironman 1",
     "category": "marve",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-1/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -1146,6 +1321,13 @@
     "category": "marve",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-2/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -1187,6 +1369,13 @@
     "title": "Ironman 4",
     "category": "marve",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-4/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -1230,6 +1419,13 @@
     "category": "marve",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-5/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -1272,6 +1468,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/loki-ph/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1299,6 +1502,13 @@
     "title": "Loki",
     "category": "marvel",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/loki/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -1342,6 +1552,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/amoled-shiva-1/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1369,6 +1586,13 @@
     "title": "Black And White Krishna",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/black-and-white-krishna/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1398,6 +1622,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/cosmic-krishna/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1425,6 +1656,13 @@
     "title": "Cosmic Shiva",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/cosmic-shiva/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1454,6 +1692,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-cloud/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1481,6 +1726,13 @@
     "title": "Hanuman Quotes",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-quotes/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1510,6 +1762,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hanuman-ram-dark/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1537,6 +1796,13 @@
     "title": "Krishna And Shiva",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna-and-shiva/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1566,6 +1832,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna-flute-lotuses/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1593,6 +1866,13 @@
     "title": "Moon Krishna",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/moon-krishna/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1622,6 +1902,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/panchamukhi-hanuman/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1649,6 +1936,13 @@
     "title": "Ram And Hanuman Dark",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ram-and-hanuman-dark/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1678,6 +1972,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ram-and-hanuman/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1705,6 +2006,13 @@
     "title": "Shiva Color Trisul",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva-color-trisul/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -1734,6 +2042,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva-trisul/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1762,6 +2077,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/spiderman-logo/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -1789,6 +2111,13 @@
     "title": "Clam Hanuman",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/clam-hanuman/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -1832,6 +2161,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/flying-hanuman/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -1873,6 +2209,13 @@
     "title": "Meditation Hanuman",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/meditation-hanuman/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -1916,6 +2259,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/radha-krishna-flute/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -1957,6 +2307,13 @@
     "title": "Radha Krishna Marriage",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/radha-krishna-marriage/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -2000,6 +2357,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/radha-krishna/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -2042,6 +2406,13 @@
     "category": "lord",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/shiva-and-me/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -2079,52 +2450,17 @@
     ]
   },
   {
-    "slug": "calm-hanuman",
-    "title": "Calm Hanuman",
-    "category": "lord",
-    "variants": [
-      {
-        "device": "laptop",
-        "label": "1920 × 1080",
-        "width": 1920,
-        "height": 1080,
-        "path": "/wallpapers/calm-hanuman/laptop-1920x1080.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "2560 × 1440",
-        "width": 2560,
-        "height": 1440,
-        "path": "/wallpapers/calm-hanuman/laptop-2560x1440.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "3840 × 2160",
-        "width": 3840,
-        "height": 2160,
-        "path": "/wallpapers/calm-hanuman/laptop-3840x2160.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "5120 × 2880",
-        "width": 5120,
-        "height": 2880,
-        "path": "/wallpapers/calm-hanuman/laptop-5120x2880.webp"
-      },
-      {
-        "device": "original",
-        "label": "Original — 6688 × 3764",
-        "width": 6688,
-        "height": 3764,
-        "path": "/wallpapers/calm-hanuman/original.webp"
-      }
-    ]
-  },
-  {
     "slug": "abstract",
     "title": "Abstract",
     "category": "aesthetic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/abstract/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2154,6 +2490,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/clouds/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2181,6 +2524,13 @@
     "title": "Japan",
     "category": "aesthetic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/japan/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2210,6 +2560,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna-radha/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2237,6 +2594,13 @@
     "title": "Leaves",
     "category": "aesthetic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/leaves/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2266,6 +2630,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/lines/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2293,6 +2664,13 @@
     "title": "Mirror Trees",
     "category": "aesthetic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/mirror-trees/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2322,6 +2700,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/tress/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2349,6 +2734,13 @@
     "title": "Dark Cloud",
     "category": "aesthitic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/dark-cloud/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2378,6 +2770,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/black-cat/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2405,6 +2804,13 @@
     "title": "Color Nature",
     "category": "aesthetic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/color-nature/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2434,6 +2840,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/night-city/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2461,6 +2874,13 @@
     "title": "Vision Tree",
     "category": "aesthetic",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/vision-tree/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2490,6 +2910,13 @@
     "category": "aesthetic",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/white-deer/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2517,6 +2944,13 @@
     "title": "Mountain",
     "category": "motivation",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/mountain/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2546,6 +2980,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/cute-demonslayer/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2573,6 +3014,13 @@
     "title": "Gojo Look",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/gojo-look/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2602,6 +3050,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/gojo/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2629,6 +3084,13 @@
     "title": "Jinwoo",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/jinwoo/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2658,6 +3120,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/king/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2685,6 +3154,13 @@
     "title": "Luffy Anime",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/luffy-anime/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2714,6 +3190,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/luffyart/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2741,6 +3224,13 @@
     "title": "Red Black Sukuna",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/red-black-sukuna/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2770,6 +3260,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/red-itachi/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2797,6 +3294,13 @@
     "title": "Rengoku",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/rengoku/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2826,6 +3330,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sanemi/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2854,24 +3365,45 @@
     "category": "anime",
     "variants": [
       {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/sukuna-destruction/phone-1080x1920.webp"
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sukuna-destruction/thumbnail-400x400.webp"
       },
       {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/sukuna-destruction/phone-1440x2560.webp"
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/sukuna-destruction/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/sukuna-destruction/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/sukuna-destruction/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/sukuna-destruction/laptop-5120x2880.webp"
       },
       {
         "device": "original",
-        "label": "Original — 2944 × 5228",
-        "width": 2944,
-        "height": 5228,
+        "label": "Original — 5228 × 2944",
+        "width": 5228,
+        "height": 2944,
         "path": "/wallpapers/sukuna-destruction/original.png"
       }
     ]
@@ -2881,6 +3413,13 @@
     "title": "Sukuna Gojo",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sukuna-gojo/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2910,6 +3449,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sukunaside/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2937,6 +3483,13 @@
     "title": "Sukunasmile",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sukunasmile/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -2966,6 +3519,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/tanjiro/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -2993,6 +3553,13 @@
     "title": "Toji",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/toji/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -3022,6 +3589,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/yorichi/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -3049,6 +3623,13 @@
     "title": "Yorichimoon",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/yorichimoon/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -3078,6 +3659,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/yuzi-sukuna/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -3105,6 +3693,13 @@
     "title": "Krishnanew",
     "category": "lord",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishnanew/thumbnail-400x400.webp"
+      },
       {
         "device": "phone",
         "label": "1080 × 1920",
@@ -3134,6 +3729,13 @@
     "category": "marvel",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/spiderman/thumbnail-400x400.webp"
+      },
+      {
         "device": "phone",
         "label": "1080 × 1920",
         "width": 1080,
@@ -3157,38 +3759,17 @@
     ]
   },
   {
-    "slug": "black",
-    "title": "Black",
-    "category": "motivation",
-    "variants": [
-      {
-        "device": "phone",
-        "label": "1080 × 1920",
-        "width": 1080,
-        "height": 1920,
-        "path": "/wallpapers/black/phone-1080x1920.webp"
-      },
-      {
-        "device": "phone",
-        "label": "1440 × 2560",
-        "width": 1440,
-        "height": 2560,
-        "path": "/wallpapers/black/phone-1440x2560.webp"
-      },
-      {
-        "device": "original",
-        "label": "Original — 2944 × 5232",
-        "width": 2944,
-        "height": 5232,
-        "path": "/wallpapers/black/original.png"
-      }
-    ]
-  },
-  {
     "slug": "blackgoku",
     "title": "Blackgoku",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/blackgoku/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -3232,6 +3813,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/gojo-blue-eyes/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -3273,6 +3861,13 @@
     "title": "Itachi",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/itachi/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -3316,6 +3911,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/king-smile/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -3358,6 +3960,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/madara/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -3379,102 +3988,11 @@
         "path": "/wallpapers/madara/laptop-3840x2160.webp"
       },
       {
-        "device": "laptop",
-        "label": "5120 × 2880",
-        "width": 5120,
-        "height": 2880,
-        "path": "/wallpapers/madara/laptop-5120x2880.webp"
-      },
-      {
         "device": "original",
-        "label": "Original — 5236 × 2944",
-        "width": 5236,
-        "height": 2944,
-        "path": "/wallpapers/madara/original.png"
-      }
-    ]
-  },
-  {
-    "slug": "obito",
-    "title": "Obito",
-    "category": "anime",
-    "variants": [
-      {
-        "device": "laptop",
-        "label": "1920 × 1080",
-        "width": 1920,
-        "height": 1080,
-        "path": "/wallpapers/obito/laptop-1920x1080.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "2560 × 1440",
-        "width": 2560,
-        "height": 1440,
-        "path": "/wallpapers/obito/laptop-2560x1440.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "3840 × 2160",
-        "width": 3840,
-        "height": 2160,
-        "path": "/wallpapers/obito/laptop-3840x2160.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "5120 × 2880",
-        "width": 5120,
-        "height": 2880,
-        "path": "/wallpapers/obito/laptop-5120x2880.webp"
-      },
-      {
-        "device": "original",
-        "label": "Original — 6688 × 3764",
-        "width": 6688,
-        "height": 3764,
-        "path": "/wallpapers/obito/original.png"
-      }
-    ]
-  },
-  {
-    "slug": "sukuna-furious",
-    "title": "Sukuna Furious",
-    "category": "anime",
-    "variants": [
-      {
-        "device": "laptop",
-        "label": "1920 × 1080",
-        "width": 1920,
-        "height": 1080,
-        "path": "/wallpapers/sukuna-furious/laptop-1920x1080.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "2560 × 1440",
-        "width": 2560,
-        "height": 1440,
-        "path": "/wallpapers/sukuna-furious/laptop-2560x1440.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "3840 × 2160",
-        "width": 3840,
-        "height": 2160,
-        "path": "/wallpapers/sukuna-furious/laptop-3840x2160.webp"
-      },
-      {
-        "device": "laptop",
-        "label": "5120 × 2880",
-        "width": 5120,
-        "height": 2880,
-        "path": "/wallpapers/sukuna-furious/laptop-5120x2880.webp"
-      },
-      {
-        "device": "original",
-        "label": "Original — 5232 × 2944",
-        "width": 5232,
-        "height": 2944,
-        "path": "/wallpapers/sukuna-furious/original.png"
+        "label": "Original — 1568 × 2784",
+        "width": 1568,
+        "height": 2784,
+        "path": "/wallpapers/madara/original.jpeg"
       }
     ]
   },
@@ -3483,6 +4001,13 @@
     "title": "Yorich Origen",
     "category": "anime",
     "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/yorich-origen/thumbnail-400x400.webp"
+      },
       {
         "device": "laptop",
         "label": "1920 × 1080",
@@ -3526,6 +4051,13 @@
     "category": "anime",
     "variants": [
       {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/zoro/thumbnail-400x400.webp"
+      },
+      {
         "device": "laptop",
         "label": "1920 × 1080",
         "width": 1920,
@@ -3559,6 +4091,2036 @@
         "width": 4420,
         "height": 2940,
         "path": "/wallpapers/zoro/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "ironman-9",
+    "title": "Ironman 9",
+    "category": "marvel",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ironman-9/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/ironman-9/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/ironman-9/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2700 × 4800",
+        "width": 2700,
+        "height": 4800,
+        "path": "/wallpapers/ironman-9/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "itachi-jpg",
+    "title": "Itachi Jpg",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/itachi-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/itachi-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/itachi-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/itachi-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "madara-eye-jpg",
+    "title": "Madara Eye Jpg",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/madara-eye-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/madara-eye-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/madara-eye-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/madara-eye-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "madara-lines-jpg",
+    "title": "Madara Lines Jpg",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/madara-lines-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/madara-lines-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/madara-lines-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/madara-lines-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "madara-red-jpg",
+    "title": "Madara Red Jpg",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/madara-red-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/madara-red-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/madara-red-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/madara-red-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "clear-sky-jpg",
+    "title": "Clear Sky Jpg",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/clear-sky-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/clear-sky-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/clear-sky-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3368 × 7468",
+        "width": 3368,
+        "height": 7468,
+        "path": "/wallpapers/clear-sky-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "foggy-forest-jpg",
+    "title": "Foggy Forest Jpg",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/foggy-forest-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/foggy-forest-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/foggy-forest-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3756 × 6704",
+        "width": 3756,
+        "height": 6704,
+        "path": "/wallpapers/foggy-forest-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "green-moutains-jpg",
+    "title": "Green Moutains Jpg",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/green-moutains-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/green-moutains-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/green-moutains-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/green-moutains-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "sakura-tree-jpg",
+    "title": "Sakura Tree Jpg",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sakura-tree-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sakura-tree-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sakura-tree-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3548 × 7096",
+        "width": 3548,
+        "height": 7096,
+        "path": "/wallpapers/sakura-tree-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "white-flower-jpg",
+    "title": "White Flower Jpg",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/white-flower-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/white-flower-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/white-flower-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 4480 × 8960",
+        "width": 4480,
+        "height": 8960,
+        "path": "/wallpapers/white-flower-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "madara-face",
+    "title": "Madara Face",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/madara-face/thumbnail-400x400.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 1672 × 941",
+        "width": 1672,
+        "height": 941,
+        "path": "/wallpapers/madara-face/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "madara-full",
+    "title": "Madara Full",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/madara-full/thumbnail-400x400.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 1672 × 941",
+        "width": 1672,
+        "height": 941,
+        "path": "/wallpapers/madara-full/original.png"
+      }
+    ]
+  },
+  {
+    "slug": "obito-jpg",
+    "title": "Obito Jpg",
+    "category": "anime",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/obito-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/obito-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/obito-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/obito-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/obito-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/obito-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "smoke-red-jpg",
+    "title": "Smoke Red Jpg",
+    "category": "abstract",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/smoke-red-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/smoke-red-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/smoke-red-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5256",
+        "width": 2944,
+        "height": 5256,
+        "path": "/wallpapers/smoke-red-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "abstract-jpg",
+    "title": "Abstract Jpg",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/abstract-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/abstract-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/abstract-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/abstract-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "abstractbirds-jpg",
+    "title": "Abstractbirds Jpg",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/abstractbirds-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/abstractbirds-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/abstractbirds-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/abstractbirds-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "cards-king-jpg",
+    "title": "Cards King Jpg",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/cards-king-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/cards-king-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/cards-king-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5252",
+        "width": 2944,
+        "height": 5252,
+        "path": "/wallpapers/cards-king-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "sun-view-jpg",
+    "title": "Sun View Jpg",
+    "category": "aesthetic",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sun-view-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sun-view-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sun-view-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5664",
+        "width": 2944,
+        "height": 5664,
+        "path": "/wallpapers/sun-view-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "blur-sonic-car-jpg",
+    "title": "Blur Sonic Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/blur-sonic-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/blur-sonic-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/blur-sonic-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 1896 × 3428",
+        "width": 1896,
+        "height": 3428,
+        "path": "/wallpapers/blur-sonic-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "bmw-jpg",
+    "title": "Bmw Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/bmw-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/bmw-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/bmw-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/bmw-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "green-car-jpg",
+    "title": "Green Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/green-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/green-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/green-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/green-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "gt-bike-jpg",
+    "title": "Gt Bike Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/gt-bike-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/gt-bike-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/gt-bike-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/gt-bike-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "lamborgini-car-jpg",
+    "title": "Lamborgini Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/lamborgini-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/lamborgini-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/lamborgini-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/lamborgini-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "og-bg-car-jpg",
+    "title": "Og Bg Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/og-bg-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/og-bg-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/og-bg-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/og-bg-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "rc-200-bike-jpg",
+    "title": "Rc 200 Bike Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/rc-200-bike-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/rc-200-bike-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/rc-200-bike-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 3860",
+        "width": 2944,
+        "height": 3860,
+        "path": "/wallpapers/rc-200-bike-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "red-car-jpg",
+    "title": "Red Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/red-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/red-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/red-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/red-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "sakura-car-jpg",
+    "title": "Sakura Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/sakura-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/sakura-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/sakura-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/sakura-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "smokey-car-jpg",
+    "title": "Smokey Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/smokey-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/smokey-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/smokey-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5248",
+        "width": 2944,
+        "height": 5248,
+        "path": "/wallpapers/smokey-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "speedlimit-car-jpg",
+    "title": "Speedlimit Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/speedlimit-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/speedlimit-car-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/speedlimit-car-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/speedlimit-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "car-design-jpg",
+    "title": "Car Design Jpg",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/car-design-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/car-design-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/car-design-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5228",
+        "width": 2944,
+        "height": 5228,
+        "path": "/wallpapers/car-design-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "de-different-jpg",
+    "title": "De Different Jpg",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/de-different-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/de-different-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/de-different-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/de-different-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "goku-jpg",
+    "title": "Goku Jpg",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/goku-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/goku-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/goku-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/goku-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "moutains-word-jpg",
+    "title": "Moutains Word Jpg",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/moutains-word-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/moutains-word-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/moutains-word-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/moutains-word-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "weather-jpg",
+    "title": "Weather Jpg",
+    "category": "motivation",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/weather-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/weather-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/weather-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2940 × 4420",
+        "width": 2940,
+        "height": 4420,
+        "path": "/wallpapers/weather-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "clear-sky",
+    "title": "Clear Sky",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/clear-sky/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/clear-sky/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/clear-sky/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 4964",
+        "width": 2944,
+        "height": 4964,
+        "path": "/wallpapers/clear-sky/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "green-tree",
+    "title": "Green Tree",
+    "category": "nature",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/green-tree/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/green-tree/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/green-tree/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2936 × 5224",
+        "width": 2936,
+        "height": 5224,
+        "path": "/wallpapers/green-tree/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "car-amoled-jpg",
+    "title": "Car Amoled Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/car-amoled-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/car-amoled-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/car-amoled-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/car-amoled-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/car-amoled-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5248",
+        "width": 2944,
+        "height": 5248,
+        "path": "/wallpapers/car-amoled-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "car-jpg",
+    "title": "Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/car-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/car-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/car-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/car-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "ferrari-car-jpg",
+    "title": "Ferrari Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/ferrari-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/ferrari-car-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/ferrari-car-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/ferrari-car-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/ferrari-car-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5232",
+        "width": 2944,
+        "height": 5232,
+        "path": "/wallpapers/ferrari-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "prosche-car-jpg",
+    "title": "Prosche Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/prosche-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/prosche-car-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/prosche-car-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/prosche-car-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/prosche-car-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5148",
+        "width": 2944,
+        "height": 5148,
+        "path": "/wallpapers/prosche-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "white-car-jpg",
+    "title": "White Car Jpg",
+    "category": "automobiles",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/white-car-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/white-car-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/white-car-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/white-car-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/white-car-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 2944 × 5888",
+        "width": 2944,
+        "height": 5888,
+        "path": "/wallpapers/white-car-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "krishna-beautiful-eyes",
+    "title": "Krishna Beautiful Eyes",
+    "category": "lord",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/krishna-beautiful-eyes/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/krishna-beautiful-eyes/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/krishna-beautiful-eyes/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/krishna-beautiful-eyes/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/krishna-beautiful-eyes/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/krishna-beautiful-eyes/original.webp"
+      }
+    ]
+  },
+  {
+    "slug": "100th-celebration-jpg",
+    "title": "100th Celebration Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/100th-celebration-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/100th-celebration-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/100th-celebration-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/100th-celebration-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/100th-celebration-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/100th-celebration-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "aura-king-jpg",
+    "title": "Aura King Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/aura-king-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/aura-king-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/aura-king-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/aura-king-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/aura-king-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/aura-king-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "csk-mahi-jpg",
+    "title": "Csk Mahi Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/csk-mahi-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/csk-mahi-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/csk-mahi-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/csk-mahi-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/csk-mahi-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/csk-mahi-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "hardik-jpg",
+    "title": "Hardik Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hardik-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/hardik-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/hardik-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/hardik-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/hardik-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6144 × 4096",
+        "width": 6144,
+        "height": 4096,
+        "path": "/wallpapers/hardik-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "mahi-jpg",
+    "title": "Mahi Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/mahi-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/mahi-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/mahi-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/mahi-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/mahi-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3760 × 6688",
+        "width": 3760,
+        "height": 6688,
+        "path": "/wallpapers/mahi-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "msd-jpg",
+    "title": "Msd Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/msd-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/msd-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/msd-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/msd-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/msd-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/msd-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "odi-virat-jpg",
+    "title": "Odi Virat Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/odi-virat-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/odi-virat-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/odi-virat-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/odi-virat-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/odi-virat-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/odi-virat-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "thala",
+    "title": "Thala",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/thala/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/thala/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/thala/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/thala/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/thala/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/thala/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "the-hitman-jpg",
+    "title": "The Hitman Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/the-hitman-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/the-hitman-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/the-hitman-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/the-hitman-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/the-hitman-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/the-hitman-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "the-legend-jpg",
+    "title": "The Legend Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/the-legend-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/the-legend-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/the-legend-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/the-legend-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/the-legend-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3760 × 6696",
+        "width": 3760,
+        "height": 6696,
+        "path": "/wallpapers/the-legend-jpg/original.jpeg"
       }
     ]
   }

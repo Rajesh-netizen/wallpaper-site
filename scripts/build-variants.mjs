@@ -18,15 +18,17 @@ const PROCESSED = 'data/processed.json';
 const MAX_FILE_MB = 24;
 const FALLBACK_QUALITIES = [95, 92, 88, 85, 80, 75];
 
-// "both" is removed. Files must go into these exact folders.
 const FOLDERS = [
-  { dir: 'phone',      devices: ['phone'] },
-  { dir: 'laptop',     devices: ['laptop'] },
-  { dir: 'motivation', devices: ['phone', 'laptop'] },
-  { dir: 'sports',     devices: ['phone', 'laptop'] },
+  { dir: 'phone',      devices: ['phone', 'thumbnail'] },
+  { dir: 'laptop',     devices: ['laptop', 'thumbnail'] },
+  { dir: 'motivation', devices: ['phone', 'laptop', 'thumbnail'] },
+  { dir: 'sports',     devices: ['phone', 'laptop', 'thumbnail'] },
 ];
 
 const TARGETS = [
+  // The lightweight thumbnail for the grid
+  { device: 'thumbnail', label: 'Thumbnail', width: 400, height: 400 },
+  
   { device: 'phone',  label: '1080 × 1920', width: 1080, height: 1920 },
   { device: 'phone',  label: '1440 × 2560', width: 1440, height: 2560 },
   { device: 'laptop', label: '1920 × 1080', width: 1920, height: 1080 },
@@ -75,7 +77,6 @@ async function readJsonSafe(p, fallback) {
 async function collectFiles() {
   const jobs = [];
 
-  // Only look inside the subfolders defined above
   for (const f of FOLDERS) {
     const dirPath = path.join(SRC, f.dir);
     try {
@@ -177,22 +178,12 @@ async function build() {
     const meta = await sharp(srcPath).metadata();
     const srcW = meta.width ?? 0;
     const srcH = meta.height ?? 0;
-    const orientation = srcW >= srcH ? 'landscape' : 'portrait';
-
-    console.log(`  Source: ${srcW} × ${srcH} (${orientation})`);
-
-    if (folder === 'phone' && orientation === 'landscape') {
-      console.log(`  ⚠ Warning: landscape image in the phone folder`);
-    }
-    if (folder === 'laptop' && orientation === 'portrait') {
-      console.log(`  ⚠ Warning: portrait image in the laptop folder`);
-    }
 
     const variants = [];
 
     for (const t of TARGETS) {
       if (!devices.includes(t.device)) continue;
-      if (srcW < t.width && srcH < t.height) continue;
+      if (srcW < t.width && srcH < t.height && t.device !== 'thumbnail') continue;
 
       const filename = `${t.device}-${t.width}x${t.height}.webp`;
       const outPath = path.join(outDir, filename);
@@ -202,7 +193,8 @@ async function build() {
           fit: 'cover',
           position: sharp.strategy.attention,
         })
-        .webp({ quality: 100, effort: 6 })
+        // 60 quality for thumbnail, 100 for full size downloads
+        .webp({ quality: t.device === 'thumbnail' ? 60 : 100, effort: 6 })
         .toFile(outPath);
 
       const { size } = await stat(outPath);
@@ -216,7 +208,7 @@ async function build() {
       });
 
       console.log(
-        `  ✓ ${t.device.padEnd(7)} ${t.label.padEnd(11)} → ${(size / 1024 / 1024).toFixed(2)} MB`
+        `  ✓ ${t.device.padEnd(9)} ${t.label.padEnd(11)} → ${(size / 1024).toFixed(0)} KB`
       );
     }
 
@@ -232,17 +224,9 @@ async function build() {
         path: `/wallpapers/${base}/${originalResult.filename}`,
       });
 
-      if (originalResult.reencoded) {
-        console.log(
-          `  ~ original      → ${originalResult.sizeMB.toFixed(2)} MB  (WebP q${originalResult.quality})`
-        );
-      } else {
-        console.log(
-          `  ✓ original      → ${originalResult.sizeMB.toFixed(2)} MB  (${ext.toUpperCase()})`
-        );
-      }
-    } else {
-      console.log(`  ✗ original      → skipped (couldn't fit under ${MAX_FILE_MB} MB)`);
+      console.log(
+        `  ✓ original  → ${(originalResult.sizeMB).toFixed(2)} MB`
+      );
     }
 
     const entry = {

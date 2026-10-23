@@ -81,7 +81,6 @@ export default function Gallery({
 
   return (
     <section id="latest" className="relative w-full pb-10 scroll-mt-16 overflow-hidden bg-ink-950">
-      {/* Cube background removed for performance */}
       
       <div className="relative mx-auto max-w-7xl px-4 sm:px-8 lg:px-12 pt-8 sm:pt-16 pb-24">
         <div key={`${tab}-${category}`} className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-white/10 pb-6">
@@ -104,16 +103,16 @@ export default function Gallery({
               <button
                 type="button"
                 onClick={() => setSeed((s) => s + 1)}
-                className="px-4 py-2 rounded-[2px] text-xs font-mono uppercase tracking-wider border border-white/20 text-neutral-300 hover:text-black hover:bg-white transition-all duration-300"
+                className="px-4 py-2 rounded-sm text-xs font-mono uppercase tracking-wider border border-white/20 text-neutral-300 hover:text-black hover:bg-white transition-all duration-300"
               >
                 Mix it up
               </button>
             )}
 
-            {/* Lightweight Glass Toggle Switch */}
-            <div className="relative flex items-center p-1 bg-white/5 border border-white/10 rounded-[4px] shadow-sm">
+            {/* Glass Toggle Switch */}
+            <div className="relative flex items-center p-1 bg-white/5 border border-white/10 rounded-sm shadow-sm">
               <div 
-                className={`absolute top-1 bottom-1 w-[calc(50%-4px)] rounded-[2px] bg-accent/20 border border-accent/50 shadow-[0_0_12px_rgba(16,185,129,0.5)] transition-transform duration-300 ease-out ${
+                className={`absolute top-1 bottom-1 w-[calc(50%-4px)] rounded-sm bg-accent/20 border border-accent/50 shadow-[0_0_12px_rgba(16,185,129,0.5)] transition-transform duration-300 ease-out ${
                   device === 'laptop' ? 'translate-x-[calc(100%+4px)]' : 'translate-x-0'
                 }`} 
               />
@@ -140,9 +139,14 @@ export default function Gallery({
         {list.length === 0 ? (
           <p className="text-neutral-500 py-20 text-center font-mono text-sm">No wallpapers found.</p>
         ) : (
-          <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+          /* Fixed Grid Layout */
+          <div className={
+            device === 'phone' 
+              ? "columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" 
+              : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full"
+          }>
             {list.map((w, i) => (
-              <div key={w.slug} className="blur-fade-in break-inside-avoid" style={{ animationDelay: `${Math.min(i * 40, 600)}ms` }}>
+              <div key={w.slug} className={`blur-fade-in ${device === 'phone' ? 'break-inside-avoid' : ''}`} style={{ animationDelay: `${Math.min(i * 40, 600)}ms` }}>
                 <WallpaperCard wallpaper={w} device={device} />
               </div>
             ))}

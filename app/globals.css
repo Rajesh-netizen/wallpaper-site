@@ -8,7 +8,7 @@
   --color-accent-sharp: #f4f4f5;
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
-  --radius-card: 4px;
+  --radius-card: 8px; /* Slightly sharper corners for the frame */
   
   --animate-fade-up: fade-up 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
   @keyframes fade-up { 0% { opacity: 0; transform: translateY(14px); } 100% { opacity: 1; transform: translateY(0); } }
@@ -24,6 +24,23 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
 .text-accent { color: var(--color-accent-main); }
 .bg-accent { background-color: var(--color-accent-main); }
 
+/* --- Grid Card Frames --- */
+.grid-card-wrapper {
+  position: relative; 
+  border-radius: var(--radius-card); 
+  padding: 4px; /* Frame thickness */
+  background-color: rgba(255, 255, 255, 0.08); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  transition: background-color 300ms ease, border-color 300ms ease;
+  transform: translateZ(0); 
+  will-change: transform, background-color;
+}
+
+.grid-card-wrapper:hover {
+  background-color: rgba(16, 185, 129, 0.4); 
+  border-color: rgba(16, 185, 129, 0.6);
+}
+
 /* --- Mesh Background Animations --- */
 @keyframes drift-1 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(10%, 20%) scale(1.1); } }
 @keyframes drift-2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-10%, -15%) scale(1.2); } }
@@ -37,18 +54,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
   pointer-events: none; z-index: -1;
 }
 
-/* GPU Accelerated Grid Cards */
-.grid-card-wrapper {
-  position: relative; border-radius: var(--radius-card); padding: 2px;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(39, 39, 42, 0.4) 100%);
-  background-size: 200% 200%; background-position: 0% 50%; 
-  transition: background-position 500ms ease;
-  transform: translateZ(0); will-change: transform, background-position;
-}
-@media (min-width: 768px) { .grid-card-wrapper { animation: card-glow-shift 10s ease infinite alternate; } }
-.grid-card-wrapper:hover { background-position: 100% 50%; }
-@keyframes card-glow-shift { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
-
+/* --- Brand Logo Underline --- */
 .brand-link { position: relative; padding-bottom: 2px; }
 .brand-text { position: relative; display: inline-block; font-family: var(--font-display); }
 .brand-text::after {
@@ -58,6 +64,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
 }
 @keyframes brand-underline-shimmer { 0% { background-position: 0% 50%; } 100% { background-position: 200% 50%; } }
 
+/* --- Hero Animations --- */
 .hero-word { display: inline-block; opacity: 0; transform: translateY(20px) scale(0.96); filter: blur(6px); animation: hero-word-in 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
 .hero-dot { display: inline-block; opacity: 0; animation: hero-dot-in 500ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
 @keyframes hero-word-in { 0% { opacity: 0; transform: translateY(20px) scale(0.96); filter: blur(6px); } 60% { filter: blur(0); } 100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); } }
@@ -71,12 +78,13 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
 
 @keyframes shimmer { 100% { transform: translateX(100%); } }
 
+/* --- Blur Fade In --- */
 .blur-fade-in { opacity: 0; filter: blur(12px); transform: translateY(12px); animation: blur-fade-in 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
 .blur-fade-in-1 { animation-delay: 0ms; }
 .blur-fade-in-2 { animation-delay: 120ms; }
 @keyframes blur-fade-in { 0% { opacity: 0; filter: blur(12px); transform: translateY(12px); } 60% { filter: blur(0); } 100% { opacity: 1; filter: blur(0); transform: translateY(0); } }
 
-/* --- Intro Screen 3D Effects --- */
+/* --- Intro Screen 3D & Text Effects --- */
 .perspective-1000 { perspective: 1000px; }
 .intro-3d-wrapper { transform-style: preserve-3d; animation: intro-float 2s ease-in-out infinite alternate; }
 .intro-3d-box { animation: intro-flip 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; transform-origin: center; }
@@ -90,7 +98,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
 @keyframes intro-float { 0% { transform: translateY(0px); } 100% { transform: translateY(-10px); } }
 @keyframes intro-load { 0% { width: 0%; } 100% { width: 100%; } }
 
-/* --- Intro Text Reveal (Anti-AI design) --- */
 .intro-text-reveal {
   display: inline-block;
   transform: translateY(100%);
@@ -105,7 +112,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
   100% { transform: translateY(0); opacity: 1; color: white; text-shadow: 4px 4px 0px rgba(16, 185, 129, 0.3); }
 }
 
-/* --- Logo Shine & Glow Effect --- */
+/* --- Logo Shine Effect --- */
 .logo-wrapper {
   position: relative;
   border-radius: 4px;
@@ -133,10 +140,11 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
   100% { left: 200%; }
 }
 
+/* --- Mobile Optimizations --- */
 @media (max-width: 767px) {
   .shadow-card { box-shadow: none !important; }
   .brand-text::after { animation: none !important; }
-  .grid-card-wrapper { animation: none !important; transform: none !important; will-change: auto; }
+  .grid-card-wrapper { padding: 2px; /* Thinner frame on mobile */ }
 }
 
 @media (prefers-reduced-motion: reduce) {

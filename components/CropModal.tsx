@@ -211,40 +211,41 @@ export default function CropModal({
 
   return (
     <div
-      className="fixed inset-0 z-[300] bg-black/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fade-up"
+      className="fixed inset-0 z-[300] bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-fade-up"
       role="dialog"
       aria-modal="true"
       aria-label={`Crop ${wallpaper.title}`}
       onClick={onClose}
     >
+      {/* Added glowing emerald border to match the main preview modal */}
       <div
-        className="bg-ink-900 neon-border rounded-card w-full max-w-2xl max-h-[92vh] overflow-y-auto shadow-card"
+        className="bg-ink-950 border border-accent/30 shadow-[0_0_40px_rgba(16,185,129,0.15)] rounded-card w-full max-w-2xl max-h-[92vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* header */}
-        <div className="flex items-center justify-between gap-4 p-4 border-b border-white/5">
-          <h3 className="font-semibold truncate">{wallpaper.title} — crop</h3>
+        <div className="flex items-center justify-between gap-4 p-5 border-b border-white/10">
+          <h3 className="font-display font-bold text-lg text-white truncate">{wallpaper.title} — crop</h3>
           <button
             onClick={onClose}
             aria-label="Close"
-            className="text-neutral-400 hover:text-white text-xl leading-none rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan transition-colors"
+            className="text-neutral-400 hover:text-white text-xl leading-none rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors"
           >
             ×
           </button>
         </div>
 
         {/* aspect picker */}
-        <div className="flex gap-2 p-4 pb-2">
+        <div className="flex gap-2 p-5 pb-2">
           {ASPECTS.map((a) => (
             <button
               key={a.id}
               onClick={() => setAspect(a.id)}
               className={[
-                'px-4 py-1.5 rounded-pill text-sm font-medium border transition-all duration-200',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-cyan',
+                'px-4 py-1.5 rounded-sm text-xs font-mono uppercase tracking-wider transition-all duration-200',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
                 aspect === a.id
-                  ? 'border-transparent bg-neon-gradient text-ink-950'
-                  : 'border-white/10 text-neutral-300 hover:text-white hover:border-white/25',
+                  ? 'bg-accent text-black font-bold'
+                  : 'bg-ink-900 border border-white/10 text-neutral-300 hover:text-white hover:border-white/30',
               ].join(' ')}
             >
               {a.label}
@@ -252,8 +253,8 @@ export default function CropModal({
           ))}
         </div>
 
-        {/* crop stage — sized naturally by the image */}
-        <div className="p-4 flex justify-center">
+        {/* crop stage */}
+        <div className="p-5 flex justify-center">
           <div
             ref={stageRef}
             className="relative select-none overflow-hidden rounded-card bg-black touch-none inline-block max-w-full"
@@ -281,18 +282,14 @@ export default function CropModal({
                   <div
                     className="absolute bg-black/60"
                     style={{
-                      left: 0,
-                      right: 0,
-                      top: 0,
+                      left: 0, right: 0, top: 0,
                       height: `${(crop.y / imgSize.h) * 100}%`,
                     }}
                   />
                   <div
                     className="absolute bg-black/60"
                     style={{
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
+                      left: 0, right: 0, bottom: 0,
                       height: `${((imgSize.h - crop.y - crop.h) / imgSize.h) * 100}%`,
                     }}
                   />
@@ -326,7 +323,7 @@ export default function CropModal({
                   }}
                   onPointerDown={onPointerDown('move')}
                 >
-                  <div className="absolute inset-0 border-2 border-neon-cyan rounded-sm pointer-events-none" />
+                  <div className="absolute inset-0 border-2 border-accent rounded-sm pointer-events-none shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
                   <Handle onDown={onPointerDown('nw')} pos="nw" />
                   <Handle onDown={onPointerDown('ne')} pos="ne" />
                   <Handle onDown={onPointerDown('sw')} pos="sw" />
@@ -334,26 +331,26 @@ export default function CropModal({
                 </div>
               </>
             ) : (
-              <div className="flex items-center justify-center text-neutral-400 text-sm p-12">
+              <div className="flex items-center justify-center text-neutral-400 text-sm p-12 font-mono">
                 Loading image…
               </div>
             )}
           </div>
         </div>
 
-        {/* footer */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 p-4 border-t border-white/5">
+        {/* footer buttons with new glowing styling */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 p-5 border-t border-white/10">
           <a
             href={srcUrl}
             download={`${wallpaper.slug}-original`}
-            className="flex-1 text-center px-4 py-2.5 rounded-pill border border-white/10 text-sm text-neutral-200 hover:bg-white/5 hover:border-white/25 transition-colors"
+            className="flex-1 text-center px-4 py-3 rounded-sm border border-white/20 text-sm font-medium text-white hover:bg-white/10 hover:border-white/40 transition-colors"
           >
             Download original
           </a>
           <button
             onClick={downloadCrop}
             disabled={busy || !imgSize}
-            className="flex-1 px-4 py-2.5 rounded-pill bg-neon-gradient text-ink-950 text-sm font-medium glow-gradient hover:-translate-y-0.5 disabled:opacity-50 disabled:translate-y-0 transition-all"
+            className="flex-1 px-4 py-3 rounded-sm bg-accent text-black font-bold text-sm transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:bg-white disabled:opacity-50 disabled:shadow-none"
           >
             {busy ? 'Preparing…' : 'Download crop'}
           </button>
@@ -382,7 +379,7 @@ function Handle({
   return (
     <div
       onPointerDown={onDown}
-      className={`absolute h-5 w-5 rounded-full bg-white border-2 border-neon-cyan touch-none ${cls}`}
+      className={`absolute h-5 w-5 rounded-full bg-accent border-2 border-black touch-none shadow-md ${cls}`}
     />
   );
 }

@@ -55,33 +55,15 @@ export default function WallpaperCard({ wallpaper, device }: any) {
   const isFav = favourites.includes(wallpaper.slug);
 
   const [copied, setCopied] = useState(false);
-  const [downloads, setDownloads] = useState(0);
-
-  useEffect(() => {
-    const stored = localStorage.getItem('wallvine_downloads');
-    if (stored) {
-      try {
-        const data = JSON.parse(stored);
-        if (data[wallpaper.slug]) setDownloads(data[wallpaper.slug]);
-      } catch (e) {}
-    }
-  }, [wallpaper.slug]);
-
-  const trackDownload = () => {
-    const stored = localStorage.getItem('wallvine_downloads');
-    let data: Record<string, number> = {};
-    try { data = stored ? JSON.parse(stored) : {}; } catch (e) {}
-    const newCount = (data[wallpaper.slug] || 0) + 1;
-    data[wallpaper.slug] = newCount;
-    localStorage.setItem('wallvine_downloads', JSON.stringify(data));
-    setDownloads(newCount);
-  };
 
   const pool = wallpaper.variants
     .filter((v: any) => v.device === device)
     .sort((a: any, b: any) => a.width - b.width);
 
   const original = wallpaper.variants.find((v: any) => v.device === 'original');
+  
+  // USE THE LIGHTWEIGHT THUMBNAIL FOR THE GRID
+  const thumbnail = wallpaper.variants.find((v: any) => v.device === 'thumbnail') || pool[0];
 
   const [previewVariant, setPreviewVariant] = useState<any>(
     pool.length ? pool[pool.length - 1] : null
@@ -105,7 +87,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
   if (pool.length === 0 || !previewVariant) return null;
 
-  const thumb = pool[pool.length - 1];
   const downloadName = (v: any) => `${wallpaper.slug}-${v.width}x${v.height}.webp`;
   const originalExt = original?.path.split('.').pop() ?? 'webp';
   const originalName = `${wallpaper.slug}-original.${originalExt}`;
@@ -144,12 +125,12 @@ export default function WallpaperCard({ wallpaper, device }: any) {
             className="block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-card"
           >
             <img
-              src={thumb.path}
+              src={thumbnail.path} // <--- USING THE THUMBNAIL HERE
               alt={`${wallpaper.title} wallpaper preview`}
               loading="lazy"
               decoding="async"
-              width={thumb.width}
-              height={thumb.height}
+              width={thumbnail.width}
+              height={thumbnail.height}
               className="w-full h-auto"
               draggable={false}
             />
@@ -173,13 +154,7 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
       {open && (
         <Portal>
-          <div
-            className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-up"
-            role="dialog"
-            aria-modal="true"
-            onClick={() => setOpen(false)}
-          >
-            {/* Added glowing border to the modal */}
+          <div className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-up" onClick={() => setOpen(false)}>
             <div
               ref={previewRef}
               className="bg-ink-950 border border-accent/30 shadow-[0_0_40px_rgba(16,185,129,0.15)] rounded-card max-w-sm w-full max-h-[90vh] overflow-y-auto will-change-transform"
@@ -193,11 +168,6 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                     <p className="text-xs text-neutral-400 font-mono">
                       {device} · {previewVariant.width} × {previewVariant.height}
                     </p>
-                    {downloads > 0 && (
-                      <span className="text-[10px] uppercase tracking-wider font-semibold text-accent bg-accent/10 px-1.5 py-0.5 rounded-sm">
-                        {downloads} Download{downloads !== 1 ? 's' : ''}
-                      </span>
-                    )}
                   </div>
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
@@ -214,16 +184,15 @@ export default function WallpaperCard({ wallpaper, device }: any) {
 
               <div className="px-5">
                 <div className="rounded-card overflow-hidden bg-ink-800 border border-white/5">
+                  {/* FULL SIZE IMAGE LOADS HERE IN THE MODAL */}
                   <img src={previewVariant.path} alt="Preview" className="block w-full h-auto max-h-56 object-contain" draggable={false} />
                 </div>
               </div>
 
               <div className="p-5 pt-4 space-y-2">
-                {/* Filled Emerald Button with Glow */}
                 <a
                   href={previewVariant.path}
                   download={downloadName(previewVariant)}
-                  onClick={trackDownload}
                   className="block w-full text-center px-4 py-3 rounded-sm bg-accent text-black font-bold hover:bg-white transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
                 >
                   Download for my {device}
@@ -248,12 +217,12 @@ export default function WallpaperCard({ wallpaper, device }: any) {
                 <p className="text-neutral-500 text-xs uppercase tracking-wider mb-2 font-mono">All sizes</p>
                 <div className="text-sm space-y-1 max-h-40 overflow-y-auto pr-1">
                   {original && (
-                    <a href={original.path} download={originalName} onClick={trackDownload} className="block text-accent hover:text-white underline decoration-accent/50 font-medium">
+                    <a href={original.path} download={originalName} className="block text-accent hover:text-white underline decoration-accent/50 font-medium">
                       {original.label} — highest quality
                     </a>
                   )}
                   {[...pool].reverse().map((v: any) => (
-                    <a key={v.path} href={v.path} download={downloadName(v)} onClick={trackDownload} className="block text-neutral-300 hover:text-accent underline decoration-neutral-600">
+                    <a key={v.path} href={v.path} download={downloadName(v)} className="block text-neutral-300 hover:text-accent underline decoration-neutral-600">
                       {v.label}
                     </a>
                   ))}
