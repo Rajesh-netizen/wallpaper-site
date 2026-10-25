@@ -1501,5 +1501,123 @@
       "laptop:5120x2880",
       "original:3760x6696"
     ]
+  },
+  "csk-captain-jpg": {
+    "builtAt": "2026-10-25T05:29:38.738Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:3884x6480"
+    ]
+  },
+  "hitman-jpg": {
+    "builtAt": "2026-10-25T05:29:41.921Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:4092x6148"
+    ]
+  },
+  "king-kohli-jpg": {
+    "builtAt": "2026-10-25T05:29:44.610Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:3764x6688"
+    ]
+  },
+  "motivation-jpg": {
+    "builtAt": "2026-10-25T05:29:47.881Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:3808x6612"
+    ]
+  },
+  "rcb-jpg": {
+    "builtAt": "2026-10-25T05:29:50.722Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:3764x6688"
+    ]
+  },
+  "virat-jpg": {
+    "builtAt": "2026-10-25T05:29:53.470Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:3764x6688"
+    ]
+  },
+  "virat18-jpg": {
+    "builtAt": "2026-10-25T05:29:56.164Z",
+    "variants": [
+      "thumbnail:400x400",
+      "phone:1080x1920",
+      "phone:1440x2560",
+      "original:3764x6688"
+    ]
+  },
+  "batsman-jpg": {
+    "builtAt": "2026-10-25T05:30:05.150Z",
+    "variants": [
+      "thumbnail:400x400",
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:3764x6688"
+    ]
+  },
+  "indian-batsman-jpg": {
+    "builtAt": "2026-10-25T05:30:12.906Z",
+    "variants": [
+      "thumbnail:400x400",
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:3764x6688"
+    ]
+  },
+  "kings-motivation-jpg": {
+    "builtAt": "2026-10-25T05:30:21.332Z",
+    "variants": [
+      "thumbnail:400x400",
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:6688x3764"
+    ]
+  },
+  "the-king-jpg": {
+    "builtAt": "2026-10-25T05:30:30.536Z",
+    "variants": [
+      "thumbnail:400x400",
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:6688x3764"
+    ]
+  },
+  "virat-kholi-jpg": {
+    "builtAt": "2026-10-25T05:30:39.740Z",
+    "variants": [
+      "thumbnail:400x400",
+      "laptop:1920x1080",
+      "laptop:2560x1440",
+      "laptop:3840x2160",
+      "laptop:5120x2880",
+      "original:3764x6684"
+    ]
   }
 }

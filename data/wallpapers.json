@@ -6123,5 +6123,495 @@
         "path": "/wallpapers/the-legend-jpg/original.jpeg"
       }
     ]
+  },
+  {
+    "slug": "csk-captain-jpg",
+    "title": "Csk Captain Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/csk-captain-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/csk-captain-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/csk-captain-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3884 × 6480",
+        "width": 3884,
+        "height": 6480,
+        "path": "/wallpapers/csk-captain-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "hitman-jpg",
+    "title": "Hitman Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/hitman-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/hitman-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/hitman-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 4092 × 6148",
+        "width": 4092,
+        "height": 6148,
+        "path": "/wallpapers/hitman-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "king-kohli-jpg",
+    "title": "King Kohli Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/king-kohli-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/king-kohli-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/king-kohli-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/king-kohli-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "motivation-jpg",
+    "title": "Motivation Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/motivation-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/motivation-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/motivation-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3808 × 6612",
+        "width": 3808,
+        "height": 6612,
+        "path": "/wallpapers/motivation-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "rcb-jpg",
+    "title": "Rcb Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/rcb-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/rcb-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/rcb-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/rcb-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "virat-jpg",
+    "title": "Virat Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/virat-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/virat-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/virat-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/virat-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "virat18-jpg",
+    "title": "Virat18 Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/virat18-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1080 × 1920",
+        "width": 1080,
+        "height": 1920,
+        "path": "/wallpapers/virat18-jpg/phone-1080x1920.webp"
+      },
+      {
+        "device": "phone",
+        "label": "1440 × 2560",
+        "width": 1440,
+        "height": 2560,
+        "path": "/wallpapers/virat18-jpg/phone-1440x2560.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/virat18-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "batsman-jpg",
+    "title": "Batsman Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/batsman-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/batsman-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/batsman-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/batsman-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/batsman-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/batsman-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "indian-batsman-jpg",
+    "title": "Indian Batsman Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/indian-batsman-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/indian-batsman-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/indian-batsman-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/indian-batsman-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/indian-batsman-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6688",
+        "width": 3764,
+        "height": 6688,
+        "path": "/wallpapers/indian-batsman-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "kings-motivation-jpg",
+    "title": "Kings Motivation Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/kings-motivation-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/kings-motivation-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/kings-motivation-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/kings-motivation-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/kings-motivation-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/kings-motivation-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "the-king-jpg",
+    "title": "The King Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/the-king-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/the-king-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/the-king-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/the-king-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/the-king-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 6688 × 3764",
+        "width": 6688,
+        "height": 3764,
+        "path": "/wallpapers/the-king-jpg/original.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "virat-kholi-jpg",
+    "title": "Virat Kholi Jpg",
+    "category": "sports",
+    "variants": [
+      {
+        "device": "thumbnail",
+        "label": "Thumbnail",
+        "width": 400,
+        "height": 400,
+        "path": "/wallpapers/virat-kholi-jpg/thumbnail-400x400.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "1920 × 1080",
+        "width": 1920,
+        "height": 1080,
+        "path": "/wallpapers/virat-kholi-jpg/laptop-1920x1080.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "2560 × 1440",
+        "width": 2560,
+        "height": 1440,
+        "path": "/wallpapers/virat-kholi-jpg/laptop-2560x1440.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "3840 × 2160",
+        "width": 3840,
+        "height": 2160,
+        "path": "/wallpapers/virat-kholi-jpg/laptop-3840x2160.webp"
+      },
+      {
+        "device": "laptop",
+        "label": "5120 × 2880",
+        "width": 5120,
+        "height": 2880,
+        "path": "/wallpapers/virat-kholi-jpg/laptop-5120x2880.webp"
+      },
+      {
+        "device": "original",
+        "label": "Original — 3764 × 6684",
+        "width": 3764,
+        "height": 6684,
+        "path": "/wallpapers/virat-kholi-jpg/original.jpeg"
+      }
+    ]
   }
 ]
